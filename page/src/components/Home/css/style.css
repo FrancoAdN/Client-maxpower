@@ -12,6 +12,8 @@ body {
 	background: #fff;
 	scroll-behavior: smooth;
 	font-family: 'Catamaran', sans-serif;
+	overflow-x: hidden;
+	
 }
 
 body a {
@@ -2731,6 +2733,7 @@ ul.tic-info li span {
 }
 
 @media screen and (max-width: 360px) {
+	
 	.modal-md {
 		width: 360px;
 		height: 200px;

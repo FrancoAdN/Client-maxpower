@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import './css/style.css';
-import './css/slider2.css';
 import './css/style2.css';
 import './css/font-awesome.css';
 import { refProv } from '../../_useRefHook';
