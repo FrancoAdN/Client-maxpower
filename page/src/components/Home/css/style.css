@@ -75,7 +75,7 @@ ul {
 }
 
 .banner-top {
-	background: url(../images/banner3.jpg) no-repeat center;
+	background: url(../images/banner9.jpg) no-repeat center;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -95,10 +95,11 @@ ul {
 	-moz-background-size: cover;
 	border-bottom-left-radius: 100px;
 	border-bottom-right-radius: 100px;
+	width: 100%;
 }
 
 .banner-top2 {
-	background: url(../images/banner19.jpg) no-repeat 0px 0px;
+	background: url(../images/banner9.jpg) no-repeat 0px 0px;
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -106,6 +107,7 @@ ul {
 	-moz-background-size: cover;
 	border-bottom-left-radius: 100px;
 	border-bottom-right-radius: 100px;
+	width: 100%;
 }
 
 .banner-info {
@@ -132,7 +134,7 @@ ul {
 	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 1.2em;
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 }
 
 .banner-top,
