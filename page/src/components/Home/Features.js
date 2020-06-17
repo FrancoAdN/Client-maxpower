@@ -30,7 +30,7 @@ export default function Features() {
 						<Modal
 							isOpen={reparaciones}
 							onRequestClose={() => setReparaciones(false)}
-							className={'modal-md'}
+							className={"modal-md"}
 						>
 							<h5>
 								<span className="fa fa-wrench s2" style={{ marginRight: '5px' }}></span>
