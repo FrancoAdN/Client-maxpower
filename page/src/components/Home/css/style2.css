@@ -1407,6 +1407,10 @@ h4.text-w3pvt {
 	color: white;
 }
 
+.shiopping-gd .fa-wrench {
+	color: white;
+}
+
 .shiopping-gd:hover {
 	background: #f3f3f3;
 	-moz-transition: all 0.25s ease;
@@ -1422,6 +1426,10 @@ h4.text-w3pvt {
 	color: #000;
 }
 .shiopping-gd:hover p {
+	color: #000;
+}
+
+.shiopping-gd:hover .fa-wrench {
 	color: #000;
 }
 

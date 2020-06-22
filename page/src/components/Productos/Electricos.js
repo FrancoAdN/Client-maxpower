@@ -56,7 +56,45 @@ function Body({ setCotizacion }) {
     const [category, setCat] = useState('all')
 
     return (
-        <div className="new_arrivals">
+        <div> 
+        <div>
+			<section className="shipping-wthree">
+				<div className="shiopping-grids d-lg-flex">
+					<div className="col-lg-4 shiopping-gd text-center">
+						<div className="icon-gd">
+							<span className="fa fa-exclamation-circle " aria-hidden="true"></span>
+						</div>
+						<div className="icon-gd-info">
+							<h3>
+								{' '}
+								DISPONIBILIDAD INMEDIATA EN VARIADORES ABB ACS880 EN POTENCIAS DE HASTA 500KW{' '}
+							</h3>
+						</div>
+					</div>
+					<div className="col-lg-4 shiopping-gd sec text-center">
+						<div className="icon-gd">
+							<span className="fa fa-wrench" aria-hidden="true"></span>
+						</div>
+						<div className="icon-gd-info">
+							<h3 className="title-second"> DISPONEMOS E IMPORTAMOS REPUESTOS DISCONTINUADOS DE VARIADORES DE VELOCIDAD </h3>
+						</div>
+					</div>
+					<div className="col-lg-4 shiopping-gd text-center">
+						<div className="icon-gd">
+							{' '}
+							<span className="fa fa-exclamation-circle " aria-hidden="true"></span>
+						</div>
+						<div className="icon-gd-info">
+							<h3>
+								{' '}
+								DISPONIBILIDAD INMEDIATA DE ARRANCADORES SUAVES ABB LINEA PSTX / PSTB / PSE {' '}
+							</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+
+            <div className="new_arrivals">
             <div className="container">
                 <div className="row">
                     <div className="col text-center">
@@ -113,6 +151,8 @@ function Body({ setCotizacion }) {
                 </div>
             </div>
 
+        </div>
+        </div>
         </div>
     )
 }
