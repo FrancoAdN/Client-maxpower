@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import twopng from './images/2.png';
 import { Link } from 'react-router-dom';
 import './css/slider.css';
@@ -13,6 +13,28 @@ export default function MainContent() {
 	};
 
 	const { aboutRef, featRef, handRef, contactRef, prodRef } = useContext(refProv);
+	let slide = 1;
+	useEffect(() => {
+		//document.getElementById('slide-sh').style.marginLeft = '-200%';
+		const timer = setInterval(() => {
+			//console.log(slide)
+			if (slide == 1) {
+				document.getElementById('slide-1').style.marginLeft = '0%';
+				slide = 2
+			} else if (slide == 2) {
+				document.getElementById('slide-1').style.marginLeft = '-100%';
+				slide = 3
+			} else {
+				document.getElementById('slide-1').style.marginLeft = '-200%';
+				slide = 1
+			}
+		}, 5000)
+
+		return () => clearTimeout(timer);
+	}, [])
+
+
+
 	return (
 		<div>
 			<div className="main-w3-pvt-header-sec" id="home">
@@ -148,12 +170,13 @@ export default function MainContent() {
 				{/* <!-- banner --> */}
 				<section className="banner_w3pvt">
 					<div className="csslider infinity" id="slider1">
-						<input type="radio" name="slides" defaultChecked="checked" id="slides_1" />
+						{/* <input type="radio" name="slides" defaultChecked="checked" id="slides_1" /> */}
+						<input type="radio" name="slides" id="slides_1" />
 						<input type="radio" name="slides" id="slides_2" />
 						<input type="radio" name="slides" id="slides_3" />
 
 						<ul>
-							<li>
+							<li id="slide-1">
 								<div className="banner-top">
 									<div className="overlay">
 										<div className="container">
