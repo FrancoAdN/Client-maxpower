@@ -1,36 +1,16 @@
-.main-chat {
-    margin-top: 30px;
-    height: 600px;
-}
 
-.toprow {
-    height: 50px;
-    border: 1px solid black;
-}
-.mainrow {
-    height: 550px;
-    border-bottom: 1px solid black;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-}
-
-.content {
-    height: 500px;
-}
-
-.send-div {
-    height: 50px;
-    width: 100%;
+.chat-btn {
+    border: 1.5px solid black;
+    outline: none;
+    background: #e2130b ;
     position: absolute;
-    bottom: 0;
+    top: 470px;
+    left: 300px;
 }
-
 .in-msg {
     margin-top: 10px;
     border-radius: 30px;
-    border: 1px solid lightgray;
-    width: 90%;
-    margin-left: 5%;
+    width: 95%;
     height: 30px;
 }
 
@@ -38,5 +18,6 @@
     border: none;
     width: 80%;
     outline: none;
+    border-radius: 30px;
     /* margin-left: 5%; */
 }
