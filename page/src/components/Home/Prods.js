@@ -29,8 +29,8 @@ export default function Prods() {
 							<p>
 								{' '}
 								Disponemos de stock en variadores ATV930 90KW de{' '}
-								<span> Schneider Electric</span>, comuniquese con nosotros para
-								brindarle la ficha tecnica y/o resolver sus dudas! Su consulta no
+								<span> Schneider Electric</span>, comuníquese con nosotros para
+								brindarle la ficha técnica y/o resolver sus dudas! Su consulta no
 								molesta.{' '}
 							</p>
 						</div>
@@ -61,9 +61,9 @@ export default function Prods() {
 								{' '}
 								A pesar del <span className="import"> COVID-19 </span>, seguimos
 								importando{' '}
-								<span className="import"> productos electricos y electronicos</span>{' '}
-								para nuestros clientes.Estamos a su disposicion, no dude en
-								contactarnos!
+								<span className="import"> productos eléctricos y electrónicos</span>{' '}
+								para nuestros clientes. Estamos a su disposición, no dude en
+								contactárnos!
 							</p>
 						</div>
 					</div>

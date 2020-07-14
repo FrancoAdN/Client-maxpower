@@ -1,170 +1,134 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import './Chat.css'
 import { SockContext } from '../../_useChat'
 
-
 export default function Chat() {
-    const { chats, sendMessageServer } = useContext(SockContext)
-
-
-    const [currentChat, setCurrentChat] = useState({})
-
-
-    return (
-        <div className="container main-chat">
-            <div className="row h-100">
-                <div className="col-3 h-100">
-
-                    <div className="row toprow">
-                        <h4 className="mx-auto my-auto">Maxpower Chat</h4>
-                    </div>
-
-                    <div className="row mainrow d-flex flex-column">
-                        {
-                            chats.map(chat => (
-                                <ChatClient
-                                    key={chat.socket_id}
-                                    client={chat}
-                                    change={setCurrentChat}
-                                />
-                            ))
-                        }
-                    </div>
-                </div>
-
-                <div className="col h-100">
-                    <ClientContent client={currentChat} emitMsg={sendMessageServer} />
-                </div>
-
-
-
-            </div>
-        </div>
-    )
-}
-
-
-function ChatClient({ client, change }) {
-    if (client.messages.length > 0) {
-        return (
-            <div className="d-flex flex-column w-100"
-                style={{ height: '60px', borderBottom: '1px solid black' }}
-                onClick={() => change(client)}>
-                <span className="mx-auto" style={{ fontSize: '20px' }}>{client.name}</span>
-                <span className="mx-auto" style={{ fontSize: '12px' }}>{client.messages[client.messages.length - 1].msg}</span>
-            </div>
-        )
-    } else if (client) {
-        return (
-            <div className="d-flex flex-column w-100"
-                style={{ height: '60px', borderBottom: '1px solid black' }}
-                onClick={() => change(client)}>
-                <span className="mx-auto" style={{ fontSize: '20px' }}>{client.name}</span>
-
-            </div>
-        )
-    } else {
-        return (<div></div>)
-    }
-
-}
-
-function ClientContent({ client, emitMsg }) {
     const [text, setText] = useState('')
-
-    const sendMessage = () => {
-
-        const message = {
-            to: client.socket_id,
-            text
-        }
-
-        emitMsg(message)
-        setText('')
-    }
-
-    if (client.messages) {
-        return (
-            <div className="row h-100">
-                <div className="w-100 toprow" align="center">
-                    <h4 className="mx-auto my-auto">{client.name}</h4>
-                </div>
-
-                <div className="w-100 mainrow">
-                    <div className="content d-flex flex-column overflow-auto">
-                        {/* MESSAGES HERE */
-
-                            client.messages.map((message, i) => (
-                                <PrintMessage key={i} message={message} />
-                            ))
-                        }
-                    </div>
-                    <div className="send-div">
-                        <div className="in-msg d-flex justify-content-around">
-                            <input
-                                type="text"
-                                value={text}
-                                onChange={e => setText(e.target.value)}
-                                onKeyDown={e => {
-                                    if (e.key === "Enter") {
-                                        e.preventDefault()
-                                        sendMessage()
-                                    }
-                                }}
-                            />
-                            <span className="text-primary" onClick={sendMessage}>Send</span>
-                        </div>
-                    </div>
-                </div>
+    const { messages, sendMessage, connectClient, connected } = useContext(SockContext)
 
 
-
-            </div>
-
-        )
-    }
     return (
-        <div className="row h-100">
-            <div className="w-100 toprow" align="center">
+        <div>
+            <div id='chat' style={{ width: '350px', height: '460px', borderRadius: '10px', background: '#e2130b', border: '1px solid #e2130b', display: 'block' }}>
+                <div className="w-100" style={{ height: '30px', color: '#fff' }}>
+                    <center><h5>Maxpower chat</h5></center>
+                </div>
+                <ChatBody con={connected} conFun={connectClient} messages={messages} />
 
-            </div>
-
-            <div className="w-100 mainrow">
-                <div className="send-div">
+                <div className="w-100 d-flex justify-content-around" style={{ height: '50px' }}>
                     <div className="in-msg d-flex justify-content-around">
                         <input
                             type="text"
+                            value={text}
+                            onChange={e => setText(e.target.value)}
+                            onKeyDown={e => {
+                                if (e.key === "Enter") {
+                                    e.preventDefault()
+                                    sendMessage({ from: 1, msg: text })
+                                    setText('')
+                                }
+                            }}
                         />
-                        <span className="text-primary" onClick={sendMessage}>Send</span>
+                        <button type="button"
+                            className="btn mx-auto my-auto"
+                            style={{ borderRadius: '30px', background: '#ffffff' }}
+                            onClick={e => {
+                                e.preventDefault()
+                                sendMessage({ from: 1, msg: text })
+                                setText('')
+                            }}
+                        >
+                            <img src="https://img.icons8.com/small/16/000000/filled-sent.png" />
+                        </button>
                     </div>
                 </div>
             </div>
-
-
+            <button className="rounded-circle chat-btn" onClick={e => {
+                e.preventDefault()
+                const chat = document.getElementById('chat').style.display
+                if (chat == 'block')
+                    document.getElementById('chat').style.display = 'none'
+                else
+                    document.getElementById('chat').style.display = 'block'
+            }}>
+                <img src="https://img.icons8.com/wired/40/000000/chat.png" alt="..." style={{ margin: '5px' }} />
+            </button>
 
         </div>
+
     )
+}
+
+function ChatMessage({ msg }) {
+    if (msg.from) {
+        // Message from client
+        return (<div style={{ margin: '10px' }}>
+            <span className="d-inline float-right" style={{ background: '#e2130b', padding: '10px', paddingLeft: '20px', paddingRight: '20px', borderRadius: '30px', maxWidth: '70%', color: '#fff' }}>{msg.msg}</span>
+        </div>)
+    }
+    // Message from server
+    return (<div className="mw-75" style={{ margin: '15px', maxWidth: '70%' }}>
+        <span className="mw-75" style={{ background: '#e3e3e3', padding: '10px', paddingLeft: '20px', paddingRight: '20px', borderRadius: '30px' }}>
+            {msg.msg}
+        </span>
+    </div >)
 
 }
 
+function PreConnectForm({ connect }) {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [tel, setTel] = useState('')
+    return (
+        <form
+            className="d-flex flex-column my-auto"
+            style={{
+                marginTop: '50px',
+                width: '350px',
+                height: '380px',
+                background: '#e3e3e3'
+            }}
 
-function PrintMessage({ message }) {
-    if (message.from) {
-        // Message from client
-        return (<div className="mw-75" style={{ margin: '15px', maxWidth: '70%' }}>
-            <span className="mw-75" style={{ background: '#e3e3e3', padding: '10px', paddingLeft: '20px', paddingRight: '20px', borderRadius: '30px' }}>
-                {message.msg}
-            </span>
-        </div >)
+            onSubmit={
+                e => {
+                    e.preventDefault()
+                    const client = { name, email, tel }
+                    connect(client)
+                }
+            }
+        >
+            <input type="text" value={name} placeholder="Nombre:" required style={{ margin: '15px' }} onChange={e => setName(e.target.value)} />
+            <input type="email" value={email} placeholder="Email:" required style={{ margin: '15px' }} onChange={e => setEmail(e.target.value)} />
+            <input type="tel" value={tel} placeholder="Teléfono:" pattern="[0-9]{3} [0-9]{4} [0-9]{4}" required style={{ margin: '15px' }} onChange={e => setTel(e.target.value)} />
+            <center><button
+                type="submit"
+                className="btn send-button"
+                style={{
+                    width: '150px',
+                    background: '#e2130b',
+                    color: '#ffffff',
+                    marginTop: '15px',
+                    marginBottom: '15px',
+                }}
+            >Conectarme</button></center>
+        </form>
+    )
+}
+
+function ChatBody({ con, conFun, messages }) {
+    if (con) {
+        return (
+            <div className="w-100 content d-flex flex-column overflow-auto" style={{ height: '380px', background: '#fff' }}>
+                {
+                    messages.map((msg, i) => (
+                        <ChatMessage key={i} msg={msg} />
+                    ))
+                }
+            </div>
+        )
     }
 
-    // Message from server
-    return (<div style={{ margin: '10px' }}>
-        <span className="d-inline float-right" style={{ background: '#e2130b', padding: '10px', paddingLeft: '20px', paddingRight: '20px', borderRadius: '30px', maxWidth: '70%', color: '#fff' }}>
-            {message.msg}
-        </span>
-    </div>)
-
-
-
+    return (
+        <PreConnectForm connect={conFun} />
+    )
 }

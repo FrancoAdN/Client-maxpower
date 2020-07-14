@@ -56,103 +56,103 @@ function Body({ setCotizacion }) {
     const [category, setCat] = useState('all')
 
     return (
-        <div> 
         <div>
-			<section className="shipping-wthree">
-				<div className="shiopping-grids d-lg-flex">
-					<div className="col-lg-4 shiopping-gd text-center">
-						<div className="icon-gd">
-							<span className="fa fa-exclamation-circle " aria-hidden="true"></span>
-						</div>
-						<div className="icon-gd-info">
-							<h3>
-								{' '}
+            <div>
+                <section className="shipping-wthree">
+                    <div className="shiopping-grids d-lg-flex">
+                        <div className="col-lg-4 shiopping-gd text-center">
+                            <div className="icon-gd">
+                                <span className="fa fa-exclamation-circle " aria-hidden="true"></span>
+                            </div>
+                            <div className="icon-gd-info">
+                                <h3>
+                                    {' '}
 								DISPONIBILIDAD INMEDIATA EN VARIADORES ABB ACS880 EN POTENCIAS DE HASTA 500KW{' '}
-							</h3>
-						</div>
-					</div>
-					<div className="col-lg-4 shiopping-gd sec text-center">
-						<div className="icon-gd">
-							<span className="fa fa-wrench" aria-hidden="true"></span>
-						</div>
-						<div className="icon-gd-info">
-							<h3 className="title-second"> DISPONEMOS E IMPORTAMOS REPUESTOS DISCONTINUADOS DE VARIADORES DE VELOCIDAD </h3>
-						</div>
-					</div>
-					<div className="col-lg-4 shiopping-gd text-center">
-						<div className="icon-gd">
-							{' '}
-							<span className="fa fa-exclamation-circle " aria-hidden="true"></span>
-						</div>
-						<div className="icon-gd-info">
-							<h3>
-								{' '}
-								DISPONIBILIDAD INMEDIATA DE ARRANCADORES SUAVES ABB LINEA PSTX / PSTB / PSE {' '}
-							</h3>
-						</div>
-					</div>
-				</div>
-			</section>
-
-            <div className="new_arrivals">
-            <div className="container">
-                <div className="row">
-                    <div className="col text-center">
-                        <div className="section_title new_arrivals_title">
-                            <h2>Productos Eléctricos</h2>
+                                </h3>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 shiopping-gd sec text-center">
+                            <div className="icon-gd">
+                                <span className="fa fa-wrench" aria-hidden="true"></span>
+                            </div>
+                            <div className="icon-gd-info">
+                                <h3 className="title-second"> DISPONEMOS E IMPORTAMOS REPUESTOS DISCONTINUADOS DE VARIADORES DE VELOCIDAD </h3>
+                            </div>
+                        </div>
+                        <div className="col-lg-4 shiopping-gd text-center">
+                            <div className="icon-gd">
+                                {' '}
+                                <span className="fa fa-exclamation-circle " aria-hidden="true"></span>
+                            </div>
+                            <div className="icon-gd-info">
+                                <h3>
+                                    {' '}
+								DISPONIBILIDAD INMEDIATA DE ARRANCADORES SUAVES ABB LÍNEA PSTX / PSTB / PSE {' '}
+                                </h3>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="row align-items-center">
-                    <div className="col text-center">
-                        <div className="new_arrivals_sorting">
-                            <ul className="arrivals_grid_sorting clearfix button-group filters-button-group">
-                                <ListCat name={'all'} current={category} change={setCat} />
-                                <Query query={CAT_QUERY}>
-                                    {
-                                        ({ loading, error, data }) => {
-                                            if (loading) return <Loading />
-                                            if (error) console.log(error)
-                                            return data.elect_categorias.map((cat, i) => {
-                                                return (
-                                                    <ListCat name={cat.categoria} key={i} current={category} change={setCat} />
-                                                )
-                                            })
+                </section>
 
+                <div className="new_arrivals">
+                    <div className="container">
+                        <div className="row">
+                            <div className="col text-center">
+                                <div className="section_title new_arrivals_title">
+                                    <h2>Productos Eléctricos</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row align-items-center">
+                            <div className="col text-center">
+                                <div className="new_arrivals_sorting">
+                                    <ul className="arrivals_grid_sorting clearfix button-group filters-button-group">
+                                        <ListCat name={'all'} current={category} change={setCat} />
+                                        <Query query={CAT_QUERY}>
+                                            {
+                                                ({ loading, error, data }) => {
+                                                    if (loading) return <Loading />
+                                                    if (error) console.log(error)
+                                                    return data.elect_categorias.map((cat, i) => {
+                                                        return (
+                                                            <ListCat name={cat.categoria} key={i} current={category} change={setCat} />
+                                                        )
+                                                    })
+
+                                                }
+                                            }
+                                        </Query>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col" style={{ marginTop: '50px', marginBottom: '50px' }}>
+                                <Grid container spacing={1} alignItems="center">
+
+                                    <Query query={PROD_QUERY} variables={{ categoria: category }}>
+                                        {
+                                            ({ loading, error, data }) => {
+                                                if (loading) return <Loading />
+                                                if (error) console.log(error)
+                                                return data.electricos.map(elect => (
+                                                    <Grid item xs={false} key={elect.id_elec}>
+                                                        <center>
+                                                            <Card prod={elect} setCotizacion={setCotizacion} />
+                                                        </center>
+
+                                                    </Grid>
+                                                ))
+                                            }
                                         }
-                                    }
-                                </Query>
-                            </ul>
+                                    </Query>
+                                </Grid>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="row">
-                    <div className="col" style={{ marginTop: '50px', marginBottom: '50px' }}>
-                        <Grid container spacing={1} alignItems="center">
 
-                            <Query query={PROD_QUERY} variables={{ categoria: category }}>
-                                {
-                                    ({ loading, error, data }) => {
-                                        if (loading) return <Loading />
-                                        if (error) console.log(error)
-                                        return data.electricos.map(elect => (
-                                            <Grid item xs={false} key={elect.id_elec}>
-                                                <center>
-                                                    <Card prod={elect} setCotizacion={setCotizacion} />
-                                                </center>
-
-                                            </Grid>
-                                        ))
-                                    }
-                                }
-                            </Query>
-                        </Grid>
-                    </div>
                 </div>
             </div>
-
-        </div>
-        </div>
         </div>
     )
 }

@@ -10,7 +10,7 @@ export default function Footer() {
 	const handleOnSubmit = (e) => {
 		e.preventDefault();
 		const news = { newsletter };
-		axios.post('http://api.maxpower-ar.com/newsletter', news);
+		axios.post('https://api.maxpower-ar.com/newsletter', news);
 		setNewsletter('');
 	};
 

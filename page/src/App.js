@@ -8,17 +8,17 @@ import Home from './components/Home/Home'
 import Electricos from './components/Productos/Electricos'
 import Electronicos from './components/Productos/Electronicos'
 
-// import Chat from './components/Chat/Chat';
+import Chat from './components/Chat/Chat';
 // import Product from './components/Products/Product'
 // import Electrics from './components/Products/Electrics'
-// import ChatProv from './_useChat'
+import ChatProv from './_useChat'
 
 
 
 
 
 const client = new ApolloClient({
-  uri: "http://api.maxpower-ar.com/graphql"
+  uri: "https://api.maxpower-ar.com/graphql"
 })
 
 
@@ -40,7 +40,7 @@ function App() {
 
 
           {/* <ChatProv>
-            <Route component={Chat} path="/chat" exact />
+            <Route component={Chat} path="/" exact />
           </ChatProv> */}
 
         </Switch>
