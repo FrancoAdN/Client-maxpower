@@ -4,7 +4,7 @@ import { SockContext } from '../../_useChat'
 
 export default function Chat() {
     const [text, setText] = useState('')
-    const { messages, sendMessage, connectClient, connected } = useContext(SockContext)
+    const { messages, sendMessage, connectClient, connected, server } = useContext(SockContext)
 
 
     return (
@@ -13,7 +13,7 @@ export default function Chat() {
                 <div className="w-100" style={{ height: '30px', color: '#fff' }}>
                     <center><h5>Maxpower chat</h5></center>
                 </div>
-                <ChatBody con={connected} conFun={connectClient} messages={messages} />
+                <ChatBody con={connected} conFun={connectClient} messages={messages} server={server} />
 
                 <div className="w-100 d-flex justify-content-around" style={{ height: '50px' }}>
                     <div className="in-msg d-flex justify-content-around">
@@ -78,6 +78,7 @@ function ChatMessage({ msg }) {
 function PreConnectForm({ connect }) {
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
+    const [emp, setEmp] = useState('')
     const [tel, setTel] = useState('')
     return (
         <form
@@ -92,13 +93,14 @@ function PreConnectForm({ connect }) {
             onSubmit={
                 e => {
                     e.preventDefault()
-                    const client = { name, email, tel }
+                    const client = { name, email, tel, emp }
                     connect(client)
                 }
             }
         >
             <input type="text" value={name} placeholder="Nombre:" required style={{ margin: '15px' }} onChange={e => setName(e.target.value)} />
             <input type="email" value={email} placeholder="Email:" required style={{ margin: '15px' }} onChange={e => setEmail(e.target.value)} />
+            <input type="text" value={emp} placeholder="Empresa:" required style={{ margin: '15px' }} onChange={e => setEmp(e.target.value)} />
             <input type="tel" value={tel} placeholder="Teléfono:" pattern="[0-9]{3} [0-9]{4} [0-9]{4}" required style={{ margin: '15px' }} onChange={e => setTel(e.target.value)} />
             <center><button
                 type="submit"
@@ -115,8 +117,8 @@ function PreConnectForm({ connect }) {
     )
 }
 
-function ChatBody({ con, conFun, messages }) {
-    if (con) {
+function ChatBody({ con, conFun, messages, server }) {
+    if (con && server) {
         return (
             <div className="w-100 content d-flex flex-column overflow-auto" style={{ height: '380px', background: '#fff' }}>
                 {
@@ -124,6 +126,12 @@ function ChatBody({ con, conFun, messages }) {
                         <ChatMessage key={i} msg={msg} />
                     ))
                 }
+            </div>
+        )
+    } else if (con && !server) {
+        return (
+            <div className="w-100 content d-flex flex-column overflow-auto" style={{ height: '380px', background: '#fff' }}>
+                <h4>Lo siento, no hay nadie para contestar en este momento.</h4>
             </div>
         )
     }

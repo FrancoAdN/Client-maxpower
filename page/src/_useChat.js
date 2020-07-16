@@ -10,15 +10,34 @@ export default function Store(props) {
     const socket = useRef()
     const [messages, setMessages] = useState([{ from: 0, msg: 'Bienvenido al chat!' }])
     const [connected, setConnected] = useState(false)
+    const [server, setServer] = useState(false)
+    const [user, setUser] = useState({})
+    const userRef = useRef()
+    const messagesRef = useRef()
+
+    useEffect(() => {
+        userRef.current = user
+    }, [user])
+
+    useEffect(() => {
+        messagesRef.current = messages
+    }, [messages])
 
     useEffect(() => {
         socket.current = io("http://localhost:5000")
-
 
         socket.current.on('server_message', (message) => {
             setMessages(messages => [...messages, message])
             console.log(message)
         })
+
+        socket.current.on('server_disconnected', () => setServer(false))
+
+        socket.current.on('existing_conv', () => {
+            const client_data = { name: userRef.current.name, email: userRef.current.email, tel: userRef.current.tel, emp: userRef.current.emp, messages: messagesRef.current }
+            socket.current.emit('client_existing_conv', client_data)
+        })
+
 
         return () => {
             socket.current.disconnect()
@@ -32,12 +51,14 @@ export default function Store(props) {
     }
 
     const connectClient = (client) => {
+        setUser(client)
         socket.current.emit('client_conn', client)
         setConnected(true)
+        setServer(true)
     }
 
     return (
-        <SockContext.Provider value={{ messages, sendMessage, connectClient, connected }}>
+        <SockContext.Provider value={{ messages, sendMessage, connectClient, connected, server }}>
             {props.children}
         </SockContext.Provider>
     )

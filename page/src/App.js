@@ -30,18 +30,18 @@ function App() {
     <ApolloProvider client={client}>
       <BrowserRouter>
         <Switch>
-          <RefProvider>
+          {/* <RefProvider>
 
             <Route component={Home} path="/" exact />
             <Route component={Electricos} path="/productos-electricos" exact />
             <Route component={Electronicos} path="/productos-electronicos" exact />
 
-          </RefProvider>
+          </RefProvider> */}
 
 
-          {/* <ChatProv>
+          <ChatProv>
             <Route component={Chat} path="/" exact />
-          </ChatProv> */}
+          </ChatProv>
 
         </Switch>
       </BrowserRouter>
