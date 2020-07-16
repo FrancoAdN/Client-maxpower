@@ -121,7 +121,7 @@ export default function Features() {
 								Realizamos toma de mediciones en diferentes puntos de prueba, y en base
 								a los resultado de la misma se conforma un informe técnico donde se
 								brindaran recomendaciones sobre el sistema eléctrico tratado previamente
-								por nuestro determinado departamento.
+								por nuestro departamento.
 							</p>
 						</Modal>
 
@@ -140,7 +140,7 @@ export default function Features() {
 							</h5>
 							<p style={{ marginTop: '10px' }}>
 								Realizamos mediciones termográficas con cámara FLUKE calibrada y
-								entregamos informes de diagnástico con posibles mantenimientos y
+								entregamos informes de diagnóstico con posibles mantenimientos y
 								correcciones a realizar.
 							</p>
 						</Modal>

@@ -28,7 +28,7 @@ export default function Footer() {
 							</h2>
 							{/* <!-- //logo --> */}
 							<p className="mt-lg-4 mt-3 mb-lg-5 mb-4">
-								Ofrecemos asesoramiento especilizado en las diferentes áreas de las
+								Ofrecemos asesoramiento especializado en las diferentes áreas de las
 								empresas anticipándonos a sus necesidades actuales y futuras, mejorando
 								el funcionamiento de los procesos continuos a través de la excelencia y
 								la calidad.
