@@ -27,13 +27,15 @@ export default function HandCrafted() {
                                 los distintos campos de acción, ofrecemos asesoramiento especializado en las
                                 diferentes áreas de las empresas, anticipándonos a sus necesidades actuales y futuras,
                                 mejorando el funcionamiento de los procesos continuos a través de la excelencia
-                                y la calidad. Estamos comprometidos a brindar soluciones acorde a cada necesidad.
+								y la calidad. Estamos comprometidos a brindar soluciones acorde a cada necesidad. asdsad
+								sad
+								sadsa
 							</p> */}
 							<br></br>
 							<p data-aos="fade-right" data-aos-duration="1500">
 								<span style={{ color: '#fff' }}>Nuestra misión:</span> Ser una empresa
 								líder en el mercado brindando soluciones tecnológicas con valor agregado
-								para nuestros clientes.
+								para nuestros clientes. 
 							</p>
 							<p data-aos="fade-right" data-aos-duration="1500">
 								<span style={{ color: '#fff' }}>Nuestra visión:</span> Ser referentes en
