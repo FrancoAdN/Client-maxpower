@@ -44,6 +44,11 @@ export default function About() {
                                     <h4 className="text-uppercase my-3"> Garantía </h4>
                                     <p className=""> Garantizamos el arreglo y correcto funcionamiento de sus productos. Brindamos a nuestros clientes productos y servicios con la mejor calidad.</p>
                                 </div>
+                                {/*
+                                <div className="video"> 
+                                  <iframe className="test-video" width="560" height="315" src="https://www.youtube.com/embed/_zKSAgvbTTQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                                */}
                             </div>
                         </div>
                     </div>
