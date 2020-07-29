@@ -2806,3 +2806,15 @@ ul.tic-info li span {
 .apply-bt-pvt a {
 	color: #fff;
 }
+
+.video {
+	margin-top: 40px;
+	margin-left: -200px;
+}
+
+.test-video {
+	border-radius: 50px;
+	-webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
+	box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
+}
