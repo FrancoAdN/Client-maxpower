@@ -7,10 +7,7 @@ import RefProvider from './_useRefHook'
 import Home from './components/Home/Home'
 import Electricos from './components/Productos/Electricos'
 import Electronicos from './components/Productos/Electronicos'
-
 import Chat from './components/Chat/Chat';
-// import Product from './components/Products/Product'
-// import Electrics from './components/Products/Electrics'
 import ChatProv from './_useChat'
 
 
@@ -30,18 +27,19 @@ function App() {
     <ApolloProvider client={client}>
       <BrowserRouter>
         <Switch>
-          {/* <RefProvider>
+          <RefProvider>
+            <ChatProv>
+              {/* <Route component={Chat} path="/" exact /> */}
+              <Route component={Home} path="/" exact />
+              <Route component={Electricos} path="/productos-electricos" exact />
+              <Route component={Electronicos} path="/productos-electronicos" exact />
+            </ChatProv>
 
-            <Route component={Home} path="/" exact />
-            <Route component={Electricos} path="/productos-electricos" exact />
-            <Route component={Electronicos} path="/productos-electronicos" exact />
 
-          </RefProvider> */}
+          </RefProvider>
 
 
-          <ChatProv>
-            <Route component={Chat} path="/" exact />
-          </ChatProv>
+
 
         </Switch>
       </BrowserRouter>

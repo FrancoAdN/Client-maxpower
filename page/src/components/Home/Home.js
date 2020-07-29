@@ -8,6 +8,7 @@ import HandCrafted from './HandCrafted'
 import Contact from './Contact'
 import Footer from './Footer'
 import 'aos/dist/aos.css'
+import Chat from '../Chat/Chat'
 
 
 
@@ -18,6 +19,7 @@ export default function Home() {
 
     return (
         <div>
+            <Chat />
             <MainContent />
             <About />
             <Prods />
