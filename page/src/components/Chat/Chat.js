@@ -185,7 +185,10 @@ function ChatBody({ con, conFun, messages, server }) {
         )
     } else if (con && !server) {
         return (
-            <div></div>
+            <div>
+                <PrintMessage msg={{ from: 0, msg: 'Gracias por comunicarse con Maxpower, en este momento no podemos antenderlo, vuelva más tarde o comuniquse vía email a la dirección ventas@maxpowerautomation.com.' }} />
+                <PrintMessage msg={{ from: 0, msg: 'Muchas gracias!' }} />
+            </div>
         )
     }
 
