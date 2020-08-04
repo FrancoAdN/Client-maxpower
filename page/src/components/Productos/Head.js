@@ -87,6 +87,7 @@ export default function Head() {
                                                 <ul>
                                                     <li><Link to={'/productos-electricos'} className="drop-text">Productos Eléctricos</Link></li>
                                                     <li><Link to={'/productos-electronicos'} className="drop-text">Productos Electrónicos</Link></li>
+                                                    <li><Link to={'/productos-industriales'} className="drop-text">Productos Industriales</Link></li>
                                                 </ul>
                                             </li>
                                         </ul>

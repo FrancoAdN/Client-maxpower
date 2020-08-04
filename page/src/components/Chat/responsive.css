@@ -1,0 +1,969 @@
+/* 
+----------------------------------------
+Responsive Chat
+----------------------------------------
+*/
+
+@media only screen and (max-width:1024px) {
+  .smith-chat-frame {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: 20px;
+    right: 10px;
+    height: calc(100% - 20px - 20px);
+    width: 600px !important;
+    min-height: 250px !important;
+    max-height: 60% !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+    border: 1px solid rgba(0, 18, 26, 0.1);
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    opacity: 1 !important;
+  }
+  .smith-chat-bar {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: calc(20px + 56px + 5px);
+    right: 10px;
+    height: 60px;
+    width: 600px !important;
+    border-radius: 30px !important;
+    border-top: 1px solid rgba(0, 18, 26, 0.1);
+    overflow: hidden !important;
+    opacity: 1 !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+  }
+  #smith-container .smith-chat-body {
+    position: relative;
+    flex: 1;
+    background: #FDFDFD;
+  }
+  #smith-container .smith-conversation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  #smith-container .smith-conversation-body-parts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  #smith-container .smith-comment-container-guest {
+    float: right;
+    width: calc(100% - 56px);
+    margin-right: 15px;
+  }
+  .smith-conversation-part-guest .smith-timestamp {
+    margin-left: 490px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .contact-form-container input {
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 270px;
+    height: 40px;
+    padding: 10px;
+    border: solid 1px rgb(190, 189, 189);
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+  .contact-form-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-form-container .phone {
+    width: 280px;
+  }
+  .contact-form-container .email {
+    width: 565px;
+  }
+  .contact-form-container .empresa {
+    width: 565px;
+  }
+  .contact-form-container .send {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 40%;
+    color: #fff;
+    border: solid 1px #e00f08;
+    background-color: #ce110a;
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+}
+
+@media only screen and (max-width:800px) {
+  .contact-form-container input {
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 270px;
+    height: 40px;
+    padding: 10px;
+    border: solid 1px rgb(190, 189, 189);
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+  .contact-form-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-form-container .phone {
+    width: 280px;
+  }
+  .contact-form-container .email {
+    width: 565px;
+  }
+  .contact-form-container .empresa {
+    width: 565px;
+  }
+  .contact-form-container .send {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 40%;
+    color: #fff;
+    border: solid 1px #e00f08;
+    background-color: #ce110a;
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .smith-chat-frame {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: 20px;
+    right: 10px;
+    height: calc(100% - 20px - 20px);
+    width: 500px !important;
+    min-height: 250px !important;
+    max-height: 60% !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+    border: 1px solid rgba(0, 18, 26, 0.1);
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    opacity: 1 !important;
+  }
+  .smith-chat-bar {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: calc(20px + 56px + 5px);
+    right: 10px;
+    height: 60px;
+    width: 500px !important;
+    border-radius: 30px !important;
+    border-top: 1px solid rgba(0, 18, 26, 0.1);
+    overflow: hidden !important;
+    opacity: 1 !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+  }
+  #smith-container .smith-chat-body {
+    position: relative;
+    flex: 1;
+    background: #FDFDFD;
+  }
+  #smith-container .smith-conversation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  #smith-container .smith-conversation-body-parts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  #smith-container .smith-comment-container-guest {
+    float: right;
+    width: calc(100% - 56px);
+    margin-right: 15px;
+  }
+  .smith-conversation-part-guest .smith-timestamp {
+    margin-left: 290px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .contact-form-container input {
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 230px;
+    height: 40px;
+    padding: 10px;
+    border: solid 1px rgb(190, 189, 189);
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+  .contact-form-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-form-container .phone {
+    width: 230px;
+  }
+  .contact-form-container .email {
+    width: 475px;
+  }
+  .contact-form-container .empresa {
+    width: 475px;
+  }
+  .contact-form-container .send {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 37%;
+    color: #fff;
+    border: solid 1px #e00f08;
+    background-color: #ce110a;
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+}
+
+@media only screen and (max-width:450px) {
+  .smith-chat-frame {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: 20px;
+    right: 10px;
+    height: calc(100% - 20px - 20px);
+    width: 360px !important;
+    min-height: 250px !important;
+    max-height: 60% !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+    border: 1px solid rgba(0, 18, 26, 0.1);
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    opacity: 1 !important;
+  }
+  .smith-chat-bar {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: calc(20px + 56px + 5px);
+    right: 10px;
+    height: 60px;
+    width: 350px !important;
+    border-radius: 30px !important;
+    border-top: 1px solid rgba(0, 18, 26, 0.1);
+    overflow: hidden !important;
+    opacity: 1 !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+  }
+  #smith-container .smith-chat-body {
+    position: relative;
+    flex: 1;
+    background: #FDFDFD;
+  }
+  #smith-container .smith-conversation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  #smith-container .smith-conversation-body-parts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  #smith-container .smith-comment-container-guest {
+    float: right;
+    width: calc(100% - 56px);
+    margin-right: 10px;
+  }
+  .smith-conversation-part-guest .smith-timestamp {
+    margin-left: 250px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .contact-form-container input {
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+    border: solid 1px rgb(190, 189, 189);
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+  .contact-form-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-form-container .phone {
+    width: 160px;
+  }
+  .contact-form-container .email {
+    width: 335px;
+  }
+  .contact-form-container .empresa {
+    width: 335px;
+  }
+  .contact-form-container .send {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 30%;
+    color: #fff;
+    border: solid 1px #e00f08;
+    background-color: #ce110a;
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+}
+
+@media only screen and (max-width:420px) {
+  .smith-chat-frame {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: 20px;
+    right: 10px;
+    height: calc(100% - 20px - 20px);
+    width: 360px !important;
+    min-height: 250px !important;
+    max-height: 60% !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+    border: 1px solid rgba(0, 18, 26, 0.1);
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    opacity: 1 !important;
+  }
+  .smith-chat-bar {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: calc(20px + 56px + 5px);
+    right: 10px;
+    height: 60px;
+    width: 350px !important;
+    border-radius: 30px !important;
+    border-top: 1px solid rgba(0, 18, 26, 0.1);
+    overflow: hidden !important;
+    opacity: 1 !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+  }
+  #smith-container .smith-chat-body {
+    position: relative;
+    flex: 1;
+    background: #FDFDFD;
+  }
+  #smith-container .smith-conversation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  #smith-container .smith-conversation-body-parts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  #smith-container .smith-comment-container-guest {
+    float: right;
+    width: calc(100% - 56px);
+    margin-right: 10px;
+  }
+  .smith-conversation-part-guest .smith-timestamp {
+    margin-left: 250px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .contact-form-container input {
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+    border: solid 1px rgb(190, 189, 189);
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+  .contact-form-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-form-container .phone {
+    width: 160px;
+  }
+  .contact-form-container .email {
+    width: 335px;
+  }
+  .contact-form-container .empresa {
+    width: 335px;
+  }
+  .contact-form-container .send {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 30%;
+    color: #fff;
+    border: solid 1px #e00f08;
+    background-color: #ce110a;
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+}
+
+@media only screen and (max-width:414px) {
+  .smith-chat-frame {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: 20px;
+    right: 10px;
+    height: calc(100% - 20px - 20px);
+    width: 360px !important;
+    min-height: 250px !important;
+    max-height: 60% !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+    border: 1px solid rgba(0, 18, 26, 0.1);
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    opacity: 1 !important;
+  }
+  .smith-chat-bar {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: calc(20px + 56px + 5px);
+    right: 10px;
+    height: 60px;
+    width: 350px !important;
+    border-radius: 30px !important;
+    border-top: 1px solid rgba(0, 18, 26, 0.1);
+    overflow: hidden !important;
+    opacity: 1 !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+  }
+  #smith-container .smith-chat-body {
+    position: relative;
+    flex: 1;
+    background: #FDFDFD;
+  }
+  #smith-container .smith-conversation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  #smith-container .smith-conversation-body-parts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  #smith-container .smith-comment-container-guest {
+    float: right;
+    width: calc(100% - 56px);
+    margin-right: 10px;
+  }
+  .smith-conversation-part-guest .smith-timestamp {
+    margin-left: 250px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .contact-form-container input {
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+    border: solid 1px rgb(190, 189, 189);
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+  .contact-form-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-form-container .phone {
+    width: 160px;
+  }
+  .contact-form-container .email {
+    width: 335px;
+  }
+  .contact-form-container .empresa {
+    width: 335px;
+  }
+  .contact-form-container .send {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 30%;
+    color: #fff;
+    border: solid 1px #e00f08;
+    background-color: #ce110a;
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+}
+
+@media only screen and (max-width:411px) {
+  .smith-chat-frame {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: 20px;
+    right: 10px;
+    height: calc(100% - 20px - 20px);
+    width: 360px !important;
+    min-height: 250px !important;
+    max-height: 60% !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+    border: 1px solid rgba(0, 18, 26, 0.1);
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    opacity: 1 !important;
+  }
+  .smith-chat-bar {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: calc(20px + 56px + 5px);
+    right: 10px;
+    height: 60px;
+    width: 350px !important;
+    border-radius: 30px !important;
+    border-top: 1px solid rgba(0, 18, 26, 0.1);
+    overflow: hidden !important;
+    opacity: 1 !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+  }
+  #smith-container .smith-chat-body {
+    position: relative;
+    flex: 1;
+    background: #FDFDFD;
+  }
+  #smith-container .smith-conversation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  #smith-container .smith-conversation-body-parts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  #smith-container .smith-comment-container-guest {
+    float: right;
+    width: calc(100% - 56px);
+    margin-right: 10px;
+  }
+  .smith-conversation-part-guest .smith-timestamp {
+    margin-left: 250px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .contact-form-container input {
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 160px;
+    height: 40px;
+    padding: 10px;
+    border: solid 1px rgb(190, 189, 189);
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+  .contact-form-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-form-container .phone {
+    width: 160px;
+  }
+  .contact-form-container .email {
+    width: 335px;
+  }
+  .contact-form-container .empresa {
+    width: 335px;
+  }
+  .contact-form-container .send {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 30%;
+    color: #fff;
+    border: solid 1px #e00f08;
+    background-color: #ce110a;
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+}
+
+@media only screen and (max-width:375px) {
+  .smith-chat-frame {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: 20px;
+    right: 10px;
+    height: calc(100% - 20px - 20px);
+    width: 360px !important;
+    min-height: 250px !important;
+    max-height: 60% !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+    border: 1px solid rgba(0, 18, 26, 0.1);
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    opacity: 1 !important;
+  }
+  .smith-chat-bar {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: calc(20px + 56px + 5px);
+    right: 10px;
+    height: 60px;
+    width: 350px !important;
+    border-radius: 30px !important;
+    border-top: 1px solid rgba(0, 18, 26, 0.1);
+    overflow: hidden !important;
+    opacity: 1 !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+  }
+  #smith-container .smith-chat-body {
+    position: relative;
+    flex: 1;
+    background: #FDFDFD;
+  }
+  #smith-container .smith-conversation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  #smith-container .smith-conversation-body-parts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  #smith-container .smith-comment-container-guest {
+    float: right;
+    width: calc(100% - 56px);
+    margin-right: 5px;
+  }
+  .smith-conversation-part-guest .smith-timestamp {
+    margin-left: 250px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .contact-form-container input {
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 165px;
+    height: 40px;
+    padding: 10px;
+    border: solid 1px rgb(190, 189, 189);
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+  .contact-form-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-form-container .phone {
+    width: 160px;
+  }
+  .contact-form-container .email {
+    width: 335px;
+  }
+  .contact-form-container .empresa {
+    width: 335px;
+  }
+  .contact-form-container .send {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 30%;
+    color: #fff;
+    border: solid 1px #e00f08;
+    background-color: #ce110a;
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+}
+
+@media only screen and (max-width:360px) {
+  .smith-chat-frame {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: 20px;
+    right: 5px;
+    height: calc(100% - 20px - 20px);
+    width: 350px !important;
+    min-height: 250px !important;
+    max-height: 60% !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+    border: 1px solid rgba(0, 18, 26, 0.1);
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    opacity: 1 !important;
+  }
+  .smith-chat-bar {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: calc(20px + 56px + 5px);
+    right: 10px;
+    height: 60px;
+    width: 350px !important;
+    border-radius: 30px !important;
+    border-top: 1px solid rgba(0, 18, 26, 0.1);
+    overflow: hidden !important;
+    opacity: 1 !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+  }
+  #smith-container .smith-chat-body {
+    position: relative;
+    flex: 1;
+    background: #FDFDFD;
+  }
+  #smith-container .smith-conversation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  #smith-container .smith-conversation-body-parts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .smith-conversation-part-guest .smith-timestamp {
+    margin-left: 235px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .contact-form-container input {
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 155px;
+    height: 40px;
+    padding: 10px;
+    border: solid 1px rgb(190, 189, 189);
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+  .contact-form-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-form-container .phone {
+    width: 155px;
+  }
+  .contact-form-container .email {
+    width: 325px;
+  }
+  .contact-form-container .empresa {
+    width: 325px;
+  }
+  .contact-form-container .send {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 30%;
+    color: #fff;
+    border: solid 1px #e00f08;
+    background-color: #ce110a;
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+}
+
+@media only screen and (max-width:320px) {
+  .smith-chat-frame {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: 20px;
+    right: 0px;
+    height: calc(100% - 20px - 20px);
+    width: 320px !important;
+    min-height: 250px !important;
+    max-height: 60% !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+    border: 1px solid rgba(0, 18, 26, 0.1);
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    opacity: 1 !important;
+  }
+  .smith-chat-bar {
+    z-index: 999999 !important;
+    position: fixed !important;
+    bottom: calc(20px + 56px + 5px);
+    right: 0px;
+    height: 60px;
+    width: 320px !important;
+    border-radius: 30px !important;
+    border-top: 1px solid rgba(0, 18, 26, 0.1);
+    overflow: hidden !important;
+    opacity: 1 !important;
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 4px 16px rgba(13, 22, 26, 0.12), 0px 2px 12px rgba(13, 22, 26, 0.08);
+    box-shadow: 0px 1px 4px rgba(13, 22, 26, 0.08), 0px 6px 16px rgba(13, 22, 26, 0.04);
+  }
+  #smith-container .smith-chat-body {
+    position: relative;
+    flex: 1;
+    background: #FDFDFD;
+  }
+  #smith-container .smith-conversation-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  #smith-container .smith-conversation-body-parts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  #smith-container .smith-comment-container-guest {
+    float: right;
+    width: calc(100% - 56px);
+    margin-right: 10px;
+  }
+  .smith-conversation-part-guest .smith-timestamp {
+    margin-left: 210px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .contact-form-container input {
+    border-radius: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    width: 140px;
+    height: 40px;
+    padding: 10px;
+    border: solid 1px rgb(190, 189, 189);
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+  .contact-form-container {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .contact-form-container .phone {
+    width: 150px;
+  }
+  .contact-form-container .email {
+    width: 305px;
+  }
+  .contact-form-container .empresa {
+    width: 305px;
+  }
+  .contact-form-container .send {
+    width: 150px;
+    height: 40px;
+    border-radius: 50px;
+    margin-left: 30%;
+    color: #fff;
+    border: solid 1px #e00f08;
+    background-color: #ce110a;
+    -webkit-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    -moz-box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+    box-shadow: 10px 10px 10px -6px rgba(166, 166, 166, 1);
+  }
+}

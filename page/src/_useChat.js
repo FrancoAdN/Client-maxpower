@@ -24,7 +24,7 @@ export default function Store(props) {
     }, [messages])
 
     useEffect(() => {
-        socket.current = io("http://localhost:5000")
+        socket.current = io("http://api.maxpower-ar.com:3500")
 
         socket.current.on('server_message', (message) => {
             setMessages(messages => [...messages, message])

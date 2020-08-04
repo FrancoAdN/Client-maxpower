@@ -142,6 +142,11 @@ export default function MainContent() {
 															Productos Electrónicos
 														</Link>
 													</li>
+													<li>
+														<Link to={'/productos-industriales'} className="drop-text">
+															Productos Industriales
+														</Link>
+													</li>
 												</ul>
 											</li>
 										</ul>
