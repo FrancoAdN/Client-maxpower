@@ -6,6 +6,7 @@ import gql from 'graphql-tag'
 import { Query } from 'react-apollo'
 import Grid from '@material-ui/core/Grid'
 import Loading from '../Loading/Loading'
+import Chat from '../Chat/Chat'
 
 
 import './plugins/font-awesome-4.7.0/css/font-awesome.min.css'
@@ -42,6 +43,7 @@ export default function Electronicos() {
     const [cotizacion, setCotizacion] = useState(false)
     return (
         <div>
+            {/* <Chat /> */}
             <Head />
             <Body setCotizacion={setCotizacion} />
             <Popup cotizacion={cotizacion} setCotizacion={setCotizacion} />
