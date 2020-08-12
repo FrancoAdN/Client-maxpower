@@ -2814,7 +2814,18 @@ ul.tic-info li span {
 
 .test-video {
 	border-radius: 50px;
-	-webkit-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
-	box-shadow: 10px 10px 16px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.75);
+	box-shadow: 10px 10px 16px 0px rgba(0, 0, 0, 0.75);
+}
+
+.prod-ind img {
+	width: 100%;
+	height: 450px;
+}
+
+.pos-ind {
+	right: 39%;
+	position: absolute;
+	bottom: 20%;
 }

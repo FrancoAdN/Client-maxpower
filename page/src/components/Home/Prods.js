@@ -6,6 +6,7 @@ import './css/font-awesome.css';
 import { refProv } from '../../_useRefHook';
 import cccc from './images/cccc.jpg';
 import ffff from './images/ffff.jpg';
+import banner10 from './images/banner10.jpg';
 
 export default function Prods() {
 	const { prodRef } = useContext(refProv);
@@ -98,6 +99,18 @@ export default function Prods() {
 								Ver
 							</Link>
 						</div>
+					</div>
+				</div>
+				<div className="prod-ind">
+					<img src={banner10} className="img-fluid" alt="" />
+					<div className="pos-ind">
+						<h4 className="text-w3pvt">
+							Conoce nuestros <br /> Productos industriales{' '}
+						</h4>
+
+						<Link to={'/productos-industriales'} className="btn shop mt-3">
+							Ver
+						</Link>
 					</div>
 				</div>
 			</section>
