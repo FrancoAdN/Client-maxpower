@@ -102,6 +102,18 @@ ul {
 	width: 100%;
 }
 
+.banner-top3 {
+	background: url(../images/banner23.jpg) no-repeat 0px 0px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	width: 100%;
+}
+
 .banner-info {
 	padding-top: 19em;
 }

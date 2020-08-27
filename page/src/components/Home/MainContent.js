@@ -184,6 +184,41 @@ export default function MainContent() {
 						<input type="radio" name="slides" id="slides_3" />
 
 						<ul>
+							<li>
+								<div className="banner-top3">
+									<div className="overlay">
+										<div className="container">
+											<div className="banner-info">
+												<div className="banner-w3ls-inner">
+													<h4> PRODUCTOS ELÉCTRICOS, ELECTRÓNICOS E INDUSTRIALES </h4>
+													<h3> EXPORTAMOS A TODO EL MUNDO </h3>
+													<p>
+														Exportamos todo tipo de  productos eléctricos, electronicos 
+														e industriales al exterior. Podes consultar mas información
+														sobre nuestro servicio, contactándonos a través de nuestra 
+														pagina web, redes sociales o enviando un email a:
+														ventas@maxpowerautomation.com.
+													</p>
+													<div className="test-info text-left mt-lg-5 mt-4">
+														<a
+															className="btn mr-2 animate__animated animate__fadeInUp"
+															onClick={() => executeScroll(prodRef)}
+														>
+															Productos
+														</a>
+														<a
+															className="btn animate__animated animate__fadeInUp"
+															onClick={() => executeScroll(contactRef)}
+														>
+															Contactános
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>						
 							<li id="slide-1">
 								<div className="banner-top">
 									<div className="overlay">
@@ -303,42 +338,6 @@ export default function MainContent() {
 									</div>
 								</div>
 							</li>
-							{/* El de abajo es el nuevo header */}
-							<li>
-								<div className="banner-top2">
-									<div className="overlay">
-										<div className="container">
-											<div className="banner-info">
-												<div className="banner-w3ls-inner">
-													<h4> PRODUCTOS ELÉCTRICOS Y ELECTRÓNICOS </h4>
-													<h3> IMPORTADORES Y DISTRIBUIDORES </h3>
-													<p>
-														A pesar del COVID-19 seguimos importando y distribuyendo productos
-														eléctricos y electrónicos a nivel nacional para nuestros clientes.
-														Puede realizar su consulta en la parte de contacto o por nuestro
-														chat online.
-													</p>
-													<div className="test-info text-left mt-lg-5 mt-4">
-														<a
-															className="btn mr-2 animate__animated animate__fadeInUp"
-															onClick={() => executeScroll(prodRef)}
-														>
-															Productos
-														</a>
-														<a
-															className="btn animate__animated animate__fadeInUp"
-															onClick={() => executeScroll(contactRef)}
-														>
-															Contactános
-														</a>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</li>
-
 						</ul>
 						<div className="arrows">
 							<label htmlFor="slides_1"></label>
