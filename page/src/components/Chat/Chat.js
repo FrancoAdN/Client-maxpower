@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import { SockContext } from '../../_useChat';
 import './style.css';
 import './responsive.css';
+import icon from './images/icon2.png';
 // import icon from './chat-icon.png'
 
 export default function Chat() {
@@ -134,7 +135,10 @@ function LaunchCircle({ display, set }) {
 	};
 	return (
 		<div id="launch" className="smith-launcher-frame e5" onClick={handleClick}>
-			<div className="smith-launcher">{/* <img src={icon} alt="icon" /> */}</div>
+			<div className="smith-launcher">
+				{' '}
+				<img src={icon} alt="icon" className="icon"></img>
+			</div>
 		</div>
 	);
 }
