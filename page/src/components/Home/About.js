@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import certificate from './images/certificate.png';
+import play from './images/play.png';
 import './css/style.css';
 import './css/style2.css';
 import './css/font-awesome.css';
@@ -84,6 +85,33 @@ export default function About() {
 					</div>
 				</div>
 			</section>
+			{/* <!-- Video Popup Section Start --> */} {/* <!-- CSS: Style 2--> */}
+			<section className="video" id="">
+				<div className="video-popup">
+					<div className="container">
+						<div className="row">
+							<div className="col-md-8 col-md-offset-2 text-center video-heading">
+								<h2>Conoce nuestro video institucional</h2>
+								<p>
+									Lanzamos en youtube nuestro nuevo video institucional, mostrando a
+									nuestros clientes nuestra empresa, las areas y el trabajo que hacemos
+									dia a dia para brindar la mejor atencion.
+								</p>
+							</div>
+						</div>
+						<div className="row">
+							<div className="col-md-12">
+								<span className="play">
+									<a href="#" className="pulse popup-youtube">
+										<img src={play} className="play-icon"></img>
+									</a>
+								</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			{/* <!-- Video Popup Section End --> */}
 		</div>
 	);
 }

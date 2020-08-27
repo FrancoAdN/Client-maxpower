@@ -12,7 +12,9 @@ export default function MainContent() {
 		window.scrollTo(0, ref.current.offsetTop);
 	};
 
-	const { aboutRef, featRef, handRef, contactRef, prodRef } = useContext(refProv);
+	const { aboutRef, featRef, handRef, contactRef, prodRef } = useContext(
+		refProv
+	);
 	let slide = 1;
 	useEffect(() => {
 		//document.getElementById('slide-sh').style.marginLeft = '-200%';
@@ -20,20 +22,18 @@ export default function MainContent() {
 			//console.log(slide)
 			if (slide == 1) {
 				document.getElementById('slide-1').style.marginLeft = '0%';
-				slide = 2
+				slide = 2;
 			} else if (slide == 2) {
 				document.getElementById('slide-1').style.marginLeft = '-100%';
-				slide = 3
+				slide = 3;
 			} else {
 				document.getElementById('slide-1').style.marginLeft = '-200%';
-				slide = 1
+				slide = 1;
 			}
-		}, 5000)
+		}, 5000);
 
 		return () => clearTimeout(timer);
-	}, [])
-
-
+	}, []);
 
 	return (
 		<div>
@@ -275,9 +275,10 @@ export default function MainContent() {
 													<h4> PRODUCTOS ELÉCTRICOS Y ELECTRÓNICOS </h4>
 													<h3> IMPORTADORES Y DISTRIBUIDORES </h3>
 													<p>
-														A pesar del COVID-19 seguimos importando y distribuyendo productos eléctricos
-														y electrónicos a nivel nacional para nuestros clientes. Puede realizar su
-														consulta en la parte de contacto o por nuestro chat online.
+														A pesar del COVID-19 seguimos importando y distribuyendo productos
+														eléctricos y electrónicos a nivel nacional para nuestros clientes.
+														Puede realizar su consulta en la parte de contacto o por nuestro
+														chat online.
 													</p>
 													<div className="test-info text-left mt-lg-5 mt-4">
 														<a

@@ -76,7 +76,7 @@ export default function Prods() {
 				data-aos-duration="1500"
 			>
 				<div className="d-lg-flex p-0">
-					<div className="col-lg-6 bottom-w3pvt-left p-lg-0">
+					<div className="prod-electricos col-lg-6 bottom-w3pvt-left p-lg-0">
 						<img src={cccc} className="img-fluid" alt="" />
 						<div className="pos-wthree">
 							<h4 className="text-wthree">
@@ -88,7 +88,7 @@ export default function Prods() {
 							</Link>
 						</div>
 					</div>
-					<div className="col-lg-6 bottom-w3pvt-left bottom-w3pvt-right p-lg-0">
+					<div className="prod-electronicos col-lg-6 bottom-w3pvt-left bottom-w3pvt-right p-lg-0">
 						<img src={ffff} className="img-fluid" alt="" />
 						<div className="pos-w3pvt">
 							<h4 className="text-w3pvt">

@@ -2829,3 +2829,81 @@ ul.tic-info li span {
 	position: absolute;
 	bottom: 20%;
 }
+
+@media (max-width: 450px) {
+	.prod-ind img {
+		width: 100%;
+		height: 230px;
+	}
+	.pos-ind {
+		width: 350px;
+		right: 2%;
+		bottom: 5%;
+		position: absolute;
+	}
+}
+
+@media (max-width: 414px) {
+	.prod-ind img {
+		width: 100%;
+		height: 230px;
+	}
+	.pos-ind {
+		width: 350px;
+		right: 2%;
+		bottom: 5%;
+		position: absolute;
+	}
+}
+
+@media (max-width: 411px) {
+	.prod-ind img {
+		width: 100%;
+		height: 230px;
+	}
+	.pos-ind {
+		width: 300px;
+		right: 14%;
+		bottom: 3%;
+		position: absolute;
+	}
+}
+
+@media (max-width: 375px) {
+	.prod-ind img {
+		width: 100%;
+		height: 230px;
+	}
+	.pos-ind {
+		width: 300px;
+		right: 10%;
+		bottom: 3%;
+		position: absolute;
+	}
+}
+
+@media (max-width: 360px) {
+	.prod-ind img {
+		width: 100%;
+		height: 230px;
+	}
+	.pos-ind {
+		width: 300px;
+		right: 7%;
+		bottom: 3%;
+		position: absolute;
+	}
+}
+
+@media (max-width: 320px) {
+	.prod-ind img {
+		width: 100%;
+		height: 230px;
+	}
+	.pos-ind {
+		width: 300px;
+		right: 0%;
+		bottom: 3%;
+		position: absolute;
+	}
+}
