@@ -20,14 +20,17 @@ export default function MainContent() {
 		//document.getElementById('slide-sh').style.marginLeft = '-200%';
 		const timer = setInterval(() => {
 			//console.log(slide)
-			if (slide == 1) {
+			if (slide === 1) {
 				document.getElementById('slide-1').style.marginLeft = '0%';
 				slide = 2;
-			} else if (slide == 2) {
+			} else if (slide === 2) {
 				document.getElementById('slide-1').style.marginLeft = '-100%';
 				slide = 3;
-			} else {
+			} else if (slide === 3) {
 				document.getElementById('slide-1').style.marginLeft = '-200%';
+				slide = 4;
+			} else {
+				document.getElementById('slide-1').style.marginLeft = '-300%';
 				slide = 1;
 			}
 		}, 5000);
@@ -300,6 +303,42 @@ export default function MainContent() {
 									</div>
 								</div>
 							</li>
+							{/* El de abajo es el nuevo header */}
+							<li>
+								<div className="banner-top2">
+									<div className="overlay">
+										<div className="container">
+											<div className="banner-info">
+												<div className="banner-w3ls-inner">
+													<h4> PRODUCTOS ELÉCTRICOS Y ELECTRÓNICOS </h4>
+													<h3> IMPORTADORES Y DISTRIBUIDORES </h3>
+													<p>
+														A pesar del COVID-19 seguimos importando y distribuyendo productos
+														eléctricos y electrónicos a nivel nacional para nuestros clientes.
+														Puede realizar su consulta en la parte de contacto o por nuestro
+														chat online.
+													</p>
+													<div className="test-info text-left mt-lg-5 mt-4">
+														<a
+															className="btn mr-2 animate__animated animate__fadeInUp"
+															onClick={() => executeScroll(prodRef)}
+														>
+															Productos
+														</a>
+														<a
+															className="btn animate__animated animate__fadeInUp"
+															onClick={() => executeScroll(contactRef)}
+														>
+															Contactános
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+
 						</ul>
 						<div className="arrows">
 							<label htmlFor="slides_1"></label>

@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
+import Modal from 'react-modal';
 import certificate from './images/certificate.png';
 import play from './images/play.png';
 import './css/style.css';
@@ -8,6 +9,7 @@ import { refProv } from '../../_useRefHook';
 
 export default function About() {
 	const { aboutRef } = useContext(refProv);
+	const [video, setVideo] = useState(false)
 	return (
 		<div ref={aboutRef} data-aos="fade-right" data-aos-duration="1500">
 			<section
@@ -102,7 +104,7 @@ export default function About() {
 						<div className="row">
 							<div className="col-md-12">
 								<span className="play">
-									<a href="#" className="pulse popup-youtube">
+									<a className="pulse popup-youtube" onClick={() => setVideo(true)}>
 										<img src={play} className="play-icon"></img>
 									</a>
 								</span>
@@ -111,7 +113,20 @@ export default function About() {
 					</div>
 				</div>
 			</section>
+			<VideoPopup video={video} setVideo={setVideo} />
 			{/* <!-- Video Popup Section End --> */}
 		</div>
 	);
+}
+
+
+function VideoPopup({ video, setVideo }) {
+	return (
+		<Modal
+			isOpen={video}
+			onRequestClose={() => setVideo(false)}
+			className={"popup-video"}>
+			{/* Adentro de este div con html el video de youtube */}
+		</Modal>
+	)
 }
