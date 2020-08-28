@@ -2639,7 +2639,7 @@ ul.tic-info li span {
 }
 
 .popup-video {
-	width: 605px;
+	width: 1080;
 	position: absolute;
 	background: #fff;
 	overflow: auto;
