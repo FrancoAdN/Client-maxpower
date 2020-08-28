@@ -127,6 +127,8 @@ function VideoPopup({ video, setVideo }) {
 			onRequestClose={() => setVideo(false)}
 			className={"popup-video"}>
 			{/* Adentro de este div con html el video de youtube */}
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/68A4khKy490" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
 		</Modal>
 	)
 }
