@@ -196,7 +196,7 @@ function ContactForm({ connect }) {
 				<button className="send text-center" type="submit">
 					{' '}
 					Enviar datos{' '}
-				</button>
+				</button>|
 			</div>
 		</form>
 	);

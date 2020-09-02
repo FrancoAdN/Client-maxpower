@@ -1582,6 +1582,10 @@ Video popup Section
 }
 
 @media (max-width: 800px) {
+	.popup-video iframe {
+		width: 800px;
+		height: 576px;
+	}
 }
 
 @media screen and (max-width: 768px) {
@@ -1598,6 +1602,17 @@ Video popup Section
 		margin: 30px 0;
 		margin-left: 14%;
 	}
+	.popup-video iframe {
+		width: 700px;
+		height: 500px;
+	}
+}
+
+@media (max-width:540px) {
+	.popup-video iframe {
+		width: 530px;
+		height: 500px;
+	}
 }
 
 @media (min-width: 411px) and (max-width: 450px) {
@@ -1610,6 +1625,10 @@ Video popup Section
 		display: block;
 		margin: 30px 0;
 		margin-left: 19%;
+	}
+	.popup-video iframe {
+		width: 410px;
+		height: 500px;
 	}
 }
 
@@ -1624,6 +1643,10 @@ Video popup Section
 		margin: 30px 0;
 		margin-left: 19%;
 	}
+	.popup-video iframe {
+		width: 360px;
+		height: 500px;
+	}
 }
 
 @media (max-width: 360px) {
@@ -1636,5 +1659,16 @@ Video popup Section
 		display: block;
 		margin: 30px 0;
 		margin-left: 19%;
+	}
+	.popup-video iframe {
+		width: 360px;
+		height: 500px;
+	}
+}
+
+@media (max-width: 320px) {
+	.popup-video iframe {
+		width: 315px;
+		height: 400px;
 	}
 }
