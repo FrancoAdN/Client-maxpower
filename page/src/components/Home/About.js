@@ -89,11 +89,11 @@ export default function About() {
 			</section>
 			{/* <!-- Video Popup Section Start --> */} {/* <!-- CSS: Style 2--> */}
 			<section className="video" id="">
-				<div className="video-popup">
+				<div className="video-popup"> 
 					<div className="container">
 						<div className="row">
 							<div className="col-md-8 col-md-offset-2 text-center video-heading">
-								<h2>Conoce nuestro video institucional</h2>
+								<h2> Ya podes ver nuestro video institucional</h2>
 								<p>
 									Lanzamos en youtube nuestro nuevo video institucional, mostrando a
 									nuestros clientes nuestra empresa, las areas y el trabajo que hacemos

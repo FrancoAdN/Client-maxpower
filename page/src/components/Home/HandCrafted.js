@@ -18,7 +18,7 @@ export default function HandCrafted() {
 								data-aos="fade-left"
 								data-aos-duration="1500"
 							>
-								Conoce más sobre nosotros...
+								Conoce más acerca de nosotros...
 							</h3>
 
 							{/* <p data-aos="fade-right" data-aos-duration="1500">

@@ -1,10 +1,3 @@
-/*--
-	Author: W3Layouts
-	Author URL: http://w3layouts.com
-	License: Creative Commons Attribution 3.0 Unported
-	License URL: http://creativecommons.org/licenses/by/3.0/
---*/
-
 html, body {
 	margin: 0;
 	font-size: 100%;
@@ -516,10 +509,6 @@ li.icons a.face-bk {
 
 li.icons a.twitter {
 	background: #1da1f2;
-}
-
-li.icons a.dribble {
-	background: #ea4c89;
 }
 
 /*-- // header --*/

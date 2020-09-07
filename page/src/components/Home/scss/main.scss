@@ -1,0 +1,216 @@
+/*-------------------------------
+        SCSS Imports
+---------------------------------*/
+
+@import 'colors';
+@import 'fonts';
+
+/*-------------------------------
+        General Styles
+---------------------------------*/
+
+html, body {
+	margin: 0;
+	font-size: 100%;
+	background: #fff;
+	scroll-behavior: smooth;
+	font-family: 'Catamaran', sans-serif;
+	overflow-x: hidden;
+}
+
+body {
+    a {
+        text-decoration: none;
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+    }
+    a:hover {
+        text-decoration: none;
+        opacity: 0.8;
+    }
+    p {
+        font-size: 0.9em;
+        color: #777;
+        line-height: 1.9em;
+        letter-spacing: 1px;
+    }
+}
+
+input[type='button'], input[type='submit'], input[type='text'], input[type='email'], input[type='search'] {
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	-ms-transition: 0.5s all;
+	font-family: 'Catamaran', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-family: 'Catamaran', sans-serif;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+/*-------------------------------
+        Header Section
+---------------------------------*/
+
+.banner-w3pvt {
+	position: relative;
+	z-index: 1;
+	background-color: #fff;
+}
+
+.banner-top {
+	background: url(../images/banner22.jpg) no-repeat center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	height: 800px;
+}
+
+.banner-top1 {
+	background: url(../images/banner9.jpg) no-repeat center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	width: 100%;
+}
+
+.banner-top2 {
+	background: url(../images/banner21.jpg) no-repeat 0px 0px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	width: 100%;
+}
+
+.banner-top3 {
+	background: url(../images/banner23.jpg) no-repeat 0px 0px;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	width: 100%;
+}
+
+.banner-info {
+    padding-top: 19em;
+    h3 {
+        text-shadow: 3px 1px 3px rgba(45, 45, 45, 0.38);
+        font-size: 5em;
+        color: #fff;
+        font-weight: 600;
+        line-height: 1em;
+    }
+    h4 {
+        color: #ec1c24;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 1.2em;
+        margin-bottom: 1.5em;
+    }
+}
+
+.banner-top, .banner-top1, .banner-top2, .banner-top3 {
+	min-height: 50em;
+}
+
+.overlay, .overlay.sec {
+	min-height: 50em;
+	height: 800px;
+	background: rgba(0, 0, 0, 0.44);
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+}
+
+.overlay.sec {
+	background: rgba(0, 0, 0, 0.62);
+	height: 800px;
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+}
+
+.overlay1 {
+	min-height: 750px;
+	height: 800px;
+	background: rgba(0, 0, 0, 0.5);
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+}
+
+.read {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 400;
+	letter-spacing: 2px;
+	display: inline-block;
+	border: none;
+	outline: none;
+	background: #ce110a;
+	-o-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-moz-border-radius: 50%;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.34);
+	-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.34);
+	-moz-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.34);
+	-o-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.34);
+	-webkit-transition: transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+	-moz-transition: transform 0.2s linear, -moz-box-shadow 0.2s linear;
+	transition: transform 0.2s linear, box-shadow 0.2s linear;
+    padding: 0.6em 2em;
+    span {
+        font-size: 3em;
+        line-height: 1.5em;
+        margin-left: 8px;
+    }
+}
+
+.read:hover, .book-appo {
+	opacity: 0.9;
+}
+
+.book-appo {
+	background: #f54785;
+}
+
+.banner-w3ls-inner {
+	text-align: left;
+	padding: 2em;
+    width: 60%;
+    p {
+        color: #fff;
+        letter-spacing: 3px;
+        margin: 1em 0;   
+    }
+}
+
+/*-------------------------------
+          Nav Section
+---------------------------------*/
+
