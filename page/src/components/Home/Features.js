@@ -192,7 +192,7 @@ export default function Features() {
 							<p className="mt-4 pr-lg-5">
 								{' '}
 								<span className="features-span">
-									¡Conocé más acerca de nuestros servicios haciendo click en ellos!{' '}
+									¡Podes ver más acerca de nuestros servicios haciendo click en ellos!{' '}
 								</span>
 							</p>
 						</div>
