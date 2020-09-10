@@ -80,7 +80,7 @@ export default function Prods() {
 						<img src={cccc} className="img-fluid" alt="" />
 						<div className="pos-wthree">
 							<h4 className="text-wthree">
-								Conoce nuestros <br /> Productos eléctricos
+								Nuestros <br /> Productos eléctricos
 							</h4>
 
 							<Link to={'/productos-electricos'} className="btn shop mt-3">
@@ -92,7 +92,7 @@ export default function Prods() {
 						<img src={ffff} className="img-fluid" alt="" />
 						<div className="pos-w3pvt">
 							<h4 className="text-w3pvt">
-								Conoce nuestros <br /> Productos electrónicos{' '}
+								Nuestros <br /> Productos electrónicos{' '}
 							</h4>
 
 							<Link to={'/productos-electronicos'} className="btn shop mt-3">
@@ -105,7 +105,7 @@ export default function Prods() {
 					<img src={banner10} className="img-fluid" alt="" />
 					<div className="pos-ind">
 						<h4 className="text-w3pvt">
-							Conoce nuestros <br /> Productos industriales{' '}
+							Nuestros <br /> Productos industriales{' '}
 						</h4>
 
 						<Link to={'/productos-industriales'} className="btn shop mt-3">
