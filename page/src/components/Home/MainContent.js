@@ -331,7 +331,7 @@ export default function MainContent() {
 													<h4> PRODUCTOS ELÉCTRICOS, ELECTRÓNICOS E INDUSTRIALES </h4>
 													<h3> EXPORTAMOS A TODO EL MUNDO </h3>
 													<p>
-														Exportamos todo tipo de  productos eléctricos, electronicos 
+														Exportamos nuestros productos eléctricos, electronicos 
 														e industriales al exterior. Podes consultar mas información
 														sobre nuestro servicio, contactándonos a través de nuestra 
 														pagina web, redes sociales o enviando un email a:
