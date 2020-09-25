@@ -181,23 +181,18 @@ export default function MainContent() {
 					<div className="carousel fade-carousel slide carousel-fade" data-ride="carousel" data-interval="5000" id="bs-carousel">
 						{/* <!-- Overlay -->
         				<!-- Indicators --> */}
-						<ol className="carousel-indicators">
-							<li data-target="#bs-carousel" data-slide-to="0" className="active"></li>
-							<li data-target="#bs-carousel" data-slide-to="1"></li>
-							<li data-target="#bs-carousel" data-slide-to="2"></li>
-						</ol>
+
 						{/* <!-- Wrapper for slides --> */}
 						<div className="carousel-inner">
 							<div className="item slides active carousel-item">
 								<div className="slide-1">
-									<div className="overlay">
 										<div className="container">
 											<div className="banner-info">
 												<div className="banner-w3ls-inner">
 													<h4> PRODUCTOS ELÉCTRICOS, ELECTRÓNICOS E INDUSTRIALES </h4>
 													<h3> EXPORTAMOS A TODO EL MUNDO </h3>
 													<p>
-														Exportamos todo tipo de  productos eléctricos, electronicos
+														Exportamos nuestros productos eléctricos, electronicos
 														e industriales al exterior. Podes consultar mas información
 														sobre nuestro servicio, contactándonos a través de nuestra
 														pagina web, redes sociales o enviando un email a:
@@ -220,13 +215,10 @@ export default function MainContent() {
 												</div>
 											</div>
 										</div>
-
-									</div>
 								</div>
 							</div>
 							<div className="item slides carousel-item">
 								<div className="slide-2">
-									<div className="overlay">
 										<div className="container">
 											<div className="banner-info">
 												<div className="banner-w3ls-inner">
@@ -272,12 +264,10 @@ export default function MainContent() {
 												</div>
 											</div>
 										</div>
-									</div>
 								</div>
 							</div>
 							<div className="item slides carousel-item">
 								<div className="slide-3">
-									<div className="overlay">
 										<div className="container">
 											<div className="banner-info">
 												<div className="banner-w3ls-inner">
@@ -306,7 +296,6 @@ export default function MainContent() {
 												</div>
 											</div>
 										</div>
-									</div>
 								</div>
 							</div>
 							<div className="hero">

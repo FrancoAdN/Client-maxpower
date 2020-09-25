@@ -108,7 +108,7 @@ ul {
 }
 
 .banner-info {
-	padding-top: 19em;
+	padding-top: 13em;
 }
 
 .banner-w3ls-inner {
@@ -898,6 +898,8 @@ h4.tittle {
 }
 
 .test-info a.btn {
+	position: relative;
+	top: -40px;
 	border: 2px solid #fff;
 	padding: 11px 30px;
 	color: #fff;
@@ -2643,6 +2645,14 @@ ul.tic-info li span {
 	transform: translate(-50%, -50%);
 }
 
+@media (min-width:768px) and (max-width: 1024px) {
+	.banner-info {
+		position: relative;
+		padding-top: 19em;
+	}
+
+}
+
 @media (max-width: 450px) {
 	.prod-ind img {
 		width: 100%;
@@ -2667,6 +2677,14 @@ ul.tic-info li span {
 		bottom: 5%;
 		position: absolute;
 	}
+	.test-info a.btn {
+		position: relative;
+		top: 0px;
+	}
+	.banner-info {
+		position: relative;
+		padding-top: 15em;
+	}
 }
 
 @media (max-width: 411px) {
@@ -2679,6 +2697,14 @@ ul.tic-info li span {
 		right: 14%;
 		bottom: 3%;
 		position: absolute;
+	}
+	.test-info a.btn {
+		position: relative;
+		top: 0px;
+	}
+	.banner-info {
+		position: relative;
+		padding-top: 15em;
 	}
 }
 
@@ -2693,6 +2719,10 @@ ul.tic-info li span {
 		bottom: 3%;
 		position: absolute;
 	}
+	.test-info a.btn {
+		position: relative;
+		top: 0px;
+	}
 }
 
 @media (max-width: 360px) {
@@ -2706,6 +2736,13 @@ ul.tic-info li span {
 		bottom: 3%;
 		position: absolute;
 	}
+	.test-info a.btn {
+		position: relative;
+		top: 0px;
+	}
+	.banner-info {
+		padding-top: 13em;
+	}
 }
 
 @media (max-width: 320px) {
@@ -2718,6 +2755,14 @@ ul.tic-info li span {
 		right: 0%;
 		bottom: 3%;
 		position: absolute;
+	}
+	.test-info a.btn {
+		position: relative;
+		top: 0px;
+		display: none;
+	}
+	.banner-info {
+		padding-top: 10em;
 	}
 }
 
