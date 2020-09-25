@@ -7,6 +7,7 @@ import './css/style2.css';
 import './css/font-awesome.css';
 import { refProv } from '../../_useRefHook';
 
+
 export default function MainContent() {
 	const executeScroll = (ref) => {
 		window.scrollTo(0, ref.current.offsetTop);
@@ -15,28 +16,28 @@ export default function MainContent() {
 	const { aboutRef, featRef, handRef, contactRef, prodRef } = useContext(
 		refProv
 	);
-	let slide = 1;
-	useEffect(() => {
-		//document.getElementById('slide-sh').style.marginLeft = '-200%';
-		const timer = setInterval(() => {
-			//console.log(slide)
-			if (slide === 1) {
-				document.getElementById('slide-1').style.marginLeft = '0%';
-				slide = 2;
-			} else if (slide === 2) {
-				document.getElementById('slide-1').style.marginLeft = '-100%';
-				slide = 3;
-			} else if (slide === 3) {
-				document.getElementById('slide-1').style.marginLeft = '-200%';
-				slide = 4;
-			} else {
-				document.getElementById('slide-1').style.marginLeft = '-300%';
-				slide = 1;
-			}
-		}, 5000);
+	// let slide = 1;
+	// useEffect(() => {
+	// 	//document.getElementById('slide-sh').style.marginLeft = '-200%';
+	// 	const timer = setInterval(() => {
+	// 		//console.log(slide)
+	// 		if (slide === 1) {
+	// 			document.getElementById('slide-1').style.marginLeft = '0%';
+	// 			slide = 2;
+	// 		} else if (slide === 2) {
+	// 			document.getElementById('slide-1').style.marginLeft = '-100%';
+	// 			slide = 3;
+	// 		} else if (slide === 3) {
+	// 			document.getElementById('slide-1').style.marginLeft = '-200%';
+	// 			slide = 4;
+	// 		} else {
+	// 			document.getElementById('slide-1').style.marginLeft = '-300%';
+	// 			slide = 1;
+	// 		}
+	// 	}, 5000);
 
-		return () => clearTimeout(timer);
-	}, []);
+	// 	return () => clearTimeout(timer);
+	// }, []);
 
 	return (
 		<div>
@@ -177,8 +178,145 @@ export default function MainContent() {
 
 				{/* <!-- banner --> */}
 				<section className="banner_w3pvt">
-					<div className="csslider infinity" id="slider1">
-						{/* <input type="radio" name="slides" defaultChecked="checked" id="slides_1" /> */}
+					<div className="carousel fade-carousel slide carousel-fade" data-ride="carousel" data-interval="5000" id="bs-carousel">
+						{/* <!-- Overlay -->
+        				<!-- Indicators --> */}
+						<ol className="carousel-indicators">
+							<li data-target="#bs-carousel" data-slide-to="0" className="active"></li>
+							<li data-target="#bs-carousel" data-slide-to="1"></li>
+							<li data-target="#bs-carousel" data-slide-to="2"></li>
+						</ol>
+						{/* <!-- Wrapper for slides --> */}
+						<div className="carousel-inner">
+							<div className="item slides active carousel-item">
+								<div className="slide-1">
+									<div className="overlay">
+										<div className="container">
+											<div className="banner-info">
+												<div className="banner-w3ls-inner">
+													<h4> PRODUCTOS ELÉCTRICOS, ELECTRÓNICOS E INDUSTRIALES </h4>
+													<h3> EXPORTAMOS A TODO EL MUNDO </h3>
+													<p>
+														Exportamos todo tipo de  productos eléctricos, electronicos
+														e industriales al exterior. Podes consultar mas información
+														sobre nuestro servicio, contactándonos a través de nuestra
+														pagina web, redes sociales o enviando un email a:
+														ventas@maxpowerautomation.com.
+													</p>
+													<div className="test-info text-left mt-lg-5 mt-4">
+														<a
+															className="btn mr-2 animate__animated animate__fadeInUp"
+															onClick={() => executeScroll(prodRef)}
+														>
+															Productos
+														</a>
+														<a
+															className="btn animate__animated animate__fadeInUp"
+															onClick={() => executeScroll(contactRef)}
+														>
+															Contactános
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div className="item slides carousel-item">
+								<div className="slide-2">
+									<div className="overlay">
+										<div className="container">
+											<div className="banner-info">
+												<div className="banner-w3ls-inner">
+													<h4
+														className="animate__animated animate__fadeIn"
+														data-aos="fade-left"
+														data-aos-duration="1500"
+													>
+														VENTA DE PRODUCTOS Y SERVICIOS
+													</h4>
+													<h3
+														className="animate__animated animate__fadeInLeft"
+														data-aos="fade-right"
+														data-aos-duration="1500"
+													>
+														AUTOMATIZACIÓN INDUSTRIAL
+													</h3>
+													<p
+														className="animate__animated animate__fadeInLeft"
+														data-aos="fade-left"
+														data-aos-duration="1500"
+													>
+														Somos distribuidores de productos eléctricos y electrónicos para
+														el sector industrial. Proporcionamos distintos servicios a las
+														empresas, brindando un excelente desempeño y calidad con garantía
+														en nuestro trabajo.
+													</p>
+
+													<div className="test-info text-left mt-lg-5 mt-4">
+														<a
+															className="btn mr-2 animate__animated animate__fadeInUp"
+															onClick={() => executeScroll(handRef)}
+														>
+															Leer más
+														</a>
+														<a
+															className="btn animate__animated animate__fadeInUp"
+															onClick={() => executeScroll(contactRef)}
+														>
+															Contactános
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div className="item slides carousel-item">
+								<div className="slide-3">
+									<div className="overlay">
+										<div className="container">
+											<div className="banner-info">
+												<div className="banner-w3ls-inner">
+													<h4> PRODUCTOS ELÉCTRICOS Y ELECTRÓNICOS </h4>
+													<h3> IMPORTADORES Y DISTRIBUIDORES </h3>
+													<p>
+														A pesar del COVID-19 seguimos importando y distribuyendo productos
+														eléctricos y electrónicos a nivel nacional para nuestros clientes.
+														Puede realizar su consulta en la parte de contacto o por nuestro
+														chat online.
+													</p>
+													<div className="test-info text-left mt-lg-5 mt-4">
+														<a
+															className="btn mr-2 animate__animated animate__fadeInUp"
+															onClick={() => executeScroll(prodRef)}
+														>
+															Productos
+														</a>
+														<a
+															className="btn animate__animated animate__fadeInUp"
+															onClick={() => executeScroll(contactRef)}
+														>
+															Contactános
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div className="hero">
+								<hgroup>
+								</hgroup>
+							</div>
+						</div>
+					</div>
+
+					{/* <div className="csslider infinity" id="slider1">
 						<input type="radio" name="slides" id="slides_1" />
 						<input type="radio" name="slides" id="slides_2" />
 						<input type="radio" name="slides" id="slides_3" />
@@ -216,6 +354,7 @@ export default function MainContent() {
 												</div>
 											</div>
 										</div>
+									
 									</div>
 								</div>
 							</li>						
@@ -345,6 +484,7 @@ export default function MainContent() {
 							<label htmlFor="slides_3"></label>
 						</div>
 					</div>
+				 */}
 				</section>
 				{/* <!-- //slider --> */}
 			</div>
