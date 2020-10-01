@@ -323,11 +323,11 @@
 
 .fade-carousel {
     position: relative;
-    height: 105vh;
+    height: 120vh;
 }
 
 .fade-carousel .carousel-inner .item {
-    height: 100vh;
+    height: 130vh;
 }
 
 .fade-carousel .carousel-indicators>li {
@@ -430,7 +430,7 @@
 /********************************/
 
 .fade-carousel .slides .slide-1, .fade-carousel .slides .slide-2, .fade-carousel .slides .slide-3 {
-    height: 100vh;
+    height: 110vh;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -465,3 +465,54 @@
         font-size: 4em;
     }
 }
+
+/*
+
+.fade-carousel .slides .slide-1, .fade-carousel .slides .slide-2, .fade-carousel .slides .slide-3 {
+    height: 110vh;
+    background-size: cover;
+}
+
+.fade-carousel .slides .slide-1 {
+    animation:fade 8s infinite;
+    -webkit-animation:fade 8s infinite;
+    background-image: url(../images/banner23.jpg);
+}
+
+.fade-carousel .slides .slide-2 {
+    animation:fade 8s infinite;
+    -webkit-animation:fade 8s infinite;
+    background-image: url(../images//banner22.jpg);
+}
+
+.fade-carousel .slides .slide-3 {
+    animation:fade 8s infinite;
+    -webkit-animation:fade 8s infinite;
+    background-image: url(../images/banner9.jpg);
+}
+
+@keyframes fade
+{
+  0%   {opacity:1}
+  33.333% { opacity: 0}
+  66.666% { opacity: 3}
+  100% { opacity: 4}
+}
+
+@keyframes fade2
+{
+  0%   {opacity:1}
+  33.333% { opacity: 2}
+  66.666% { opacity: 3}
+  100% { opacity: 4}
+}
+
+@keyframes fade3
+{
+  0%   {opacity:1}
+  33.333% { opacity: 2}
+  66.666% { opacity: 3}
+  100% { opacity: 4}
+}
+
+*/

@@ -299,8 +299,15 @@ nav a:hover {
 }
 
 .menu li.active a {
+	font-weight: 600;
 	color: #ce110a;
 }
+
+.menu li.shop a {
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+
 
 /* Hide Dropdowns by Default
  * and giving it a position of absolute */
@@ -899,7 +906,7 @@ h4.tittle {
 
 .test-info a.btn {
 	position: relative;
-	top: -40px;
+	top: 0px;
 	border: 2px solid #fff;
 	padding: 11px 30px;
 	color: #fff;

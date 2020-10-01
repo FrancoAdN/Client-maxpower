@@ -124,6 +124,11 @@ export default function MainContent() {
 											<li>
 												<a onClick={() => executeScroll(featRef)}>Servicios</a>
 											</li>
+											{ /*
+											<li className="shop active">
+												<Link to={"https://maxpower.mercadoshops.com.ar/"}>Tienda</Link>
+											</li>
+											*/ }
 											<li>
 												{/* <!-- First Tier Drop Down --> */}
 												<label htmlFor="drop-2" className="toggle toogle-2">
