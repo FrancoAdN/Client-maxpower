@@ -124,6 +124,9 @@ export default function MainContent() {
 											<li>
 												<a onClick={() => executeScroll(featRef)}>Servicios</a>
 											</li>
+											<li className="active">
+												<a href="https://maxpower.mercadoshops.com.ar/" target="_blank">Tienda</a>
+											</li>
 											{ /*
 											<li className="shop active">
 												<Link to={"https://maxpower.mercadoshops.com.ar/"}>Tienda</Link>
@@ -191,116 +194,116 @@ export default function MainContent() {
 						<div className="carousel-inner">
 							<div className="item slides active carousel-item">
 								<div className="slide-1">
-										<div className="container">
-											<div className="banner-info">
-												<div className="banner-w3ls-inner">
-													<h4> PRODUCTOS ELÉCTRICOS, ELECTRÓNICOS E INDUSTRIALES </h4>
-													<h3> EXPORTAMOS A TODO EL MUNDO </h3>
-													<p>
-														Exportamos nuestros productos eléctricos, electronicos
-														e industriales al exterior. Podes consultar mas información
-														sobre nuestro servicio, contactándonos a través de nuestra
-														pagina web, redes sociales o enviando un email a:
-														ventas@maxpowerautomation.com.
+									<div className="container">
+										<div className="banner-info">
+											<div className="banner-w3ls-inner">
+												<h4> PRODUCTOS ELÉCTRICOS, ELECTRÓNICOS E INDUSTRIALES </h4>
+												<h3> EXPORTAMOS A TODO EL MUNDO </h3>
+												<p>
+													Exportamos nuestros productos eléctricos, electronicos
+													e industriales al exterior. Podes consultar mas información
+													sobre nuestro servicio, contactándonos a través de nuestra
+													pagina web, redes sociales o enviando un email a:
+													ventas@maxpowerautomation.com.
 													</p>
-													<div className="test-info text-left mt-lg-5 mt-4">
-														<a
-															className="btn mr-2 animate__animated animate__fadeInUp"
-															onClick={() => executeScroll(prodRef)}
-														>
-															Productos
+												<div className="test-info text-left mt-lg-5 mt-4">
+													<a
+														className="btn mr-2 animate__animated animate__fadeInUp"
+														onClick={() => executeScroll(prodRef)}
+													>
+														Productos
 														</a>
-														<a
-															className="btn animate__animated animate__fadeInUp"
-															onClick={() => executeScroll(contactRef)}
-														>
-															Contactános
+													<a
+														className="btn animate__animated animate__fadeInUp"
+														onClick={() => executeScroll(contactRef)}
+													>
+														Contactános
 														</a>
-													</div>
 												</div>
 											</div>
 										</div>
+									</div>
 								</div>
 							</div>
 							<div className="item slides carousel-item">
 								<div className="slide-2">
-										<div className="container">
-											<div className="banner-info">
-												<div className="banner-w3ls-inner">
-													<h4
-														className="animate__animated animate__fadeIn"
-														data-aos="fade-left"
-														data-aos-duration="1500"
-													>
-														VENTA DE PRODUCTOS Y SERVICIOS
+									<div className="container">
+										<div className="banner-info">
+											<div className="banner-w3ls-inner">
+												<h4
+													className="animate__animated animate__fadeIn"
+													data-aos="fade-left"
+													data-aos-duration="1500"
+												>
+													VENTA DE PRODUCTOS Y SERVICIOS
 													</h4>
-													<h3
-														className="animate__animated animate__fadeInLeft"
-														data-aos="fade-right"
-														data-aos-duration="1500"
-													>
-														AUTOMATIZACIÓN INDUSTRIAL
+												<h3
+													className="animate__animated animate__fadeInLeft"
+													data-aos="fade-right"
+													data-aos-duration="1500"
+												>
+													AUTOMATIZACIÓN INDUSTRIAL
 													</h3>
-													<p
-														className="animate__animated animate__fadeInLeft"
-														data-aos="fade-left"
-														data-aos-duration="1500"
-													>
-														Somos distribuidores de productos eléctricos y electrónicos para
-														el sector industrial. Proporcionamos distintos servicios a las
-														empresas, brindando un excelente desempeño y calidad con garantía
-														en nuestro trabajo.
+												<p
+													className="animate__animated animate__fadeInLeft"
+													data-aos="fade-left"
+													data-aos-duration="1500"
+												>
+													Somos distribuidores de productos eléctricos y electrónicos para
+													el sector industrial. Proporcionamos distintos servicios a las
+													empresas, brindando un excelente desempeño y calidad con garantía
+													en nuestro trabajo.
 													</p>
 
-													<div className="test-info text-left mt-lg-5 mt-4">
-														<a
-															className="btn mr-2 animate__animated animate__fadeInUp"
-															onClick={() => executeScroll(handRef)}
-														>
-															Leer más
+												<div className="test-info text-left mt-lg-5 mt-4">
+													<a
+														className="btn mr-2 animate__animated animate__fadeInUp"
+														onClick={() => executeScroll(handRef)}
+													>
+														Leer más
 														</a>
-														<a
-															className="btn animate__animated animate__fadeInUp"
-															onClick={() => executeScroll(contactRef)}
-														>
-															Contactános
+													<a
+														className="btn animate__animated animate__fadeInUp"
+														onClick={() => executeScroll(contactRef)}
+													>
+														Contactános
 														</a>
-													</div>
 												</div>
 											</div>
 										</div>
+									</div>
 								</div>
 							</div>
 							<div className="item slides carousel-item">
 								<div className="slide-3">
-										<div className="container">
-											<div className="banner-info">
-												<div className="banner-w3ls-inner">
-													<h4> PRODUCTOS ELÉCTRICOS Y ELECTRÓNICOS </h4>
-													<h3> IMPORTADORES Y DISTRIBUIDORES </h3>
-													<p>
-														A pesar del COVID-19 seguimos importando y distribuyendo productos
-														eléctricos y electrónicos a nivel nacional para nuestros clientes.
-														Puede realizar su consulta en la parte de contacto o por nuestro
-														chat online.
+									<div className="container">
+										<div className="banner-info">
+											<div className="banner-w3ls-inner">
+												<h4> PRODUCTOS ELÉCTRICOS Y ELECTRÓNICOS </h4>
+												<h3> IMPORTADORES Y DISTRIBUIDORES </h3>
+												<p>
+													A pesar del COVID-19 seguimos importando y distribuyendo productos
+													eléctricos y electrónicos a nivel nacional para nuestros clientes.
+													Puede realizar su consulta en la parte de contacto o por nuestro
+													chat online.
 													</p>
-													<div className="test-info text-left mt-lg-5 mt-4">
-														<a
-															className="btn mr-2 animate__animated animate__fadeInUp"
-															onClick={() => executeScroll(prodRef)}
-														>
-															Productos
+												<div className="test-info text-left mt-lg-5 mt-4">
+													<a
+														className="btn mr-2 animate__animated animate__fadeInUp"
+														onClick={() => executeScroll(prodRef)}
+													>
+														Productos
 														</a>
-														<a
-															className="btn animate__animated animate__fadeInUp"
-															onClick={() => executeScroll(contactRef)}
-														>
-															Contactános
+													<a
+														className="btn animate__animated animate__fadeInUp"
+														onClick={() => executeScroll(contactRef)}
+													>
+														Contactános
 														</a>
-													</div>
 												</div>
 											</div>
 										</div>
+									</div>
 								</div>
 							</div>
 							<div className="hero">

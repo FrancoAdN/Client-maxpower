@@ -44,7 +44,7 @@ export default function Electricos() {
     const [cotizacion, setCotizacion] = useState(false)
     return (
         <div>
-            <Chat />
+            {/* <Chat /> */}
             <Head />
             <Body setCotizacion={setCotizacion} />
             <Popup cotizacion={cotizacion} setCotizacion={setCotizacion} />

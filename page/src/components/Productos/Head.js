@@ -78,6 +78,9 @@ export default function Head() {
                                             <li className="active"><Link to={'/'}>Inicio</Link></li>
                                             <li><Link to={'/'}>Nosotros</Link></li>
                                             <li><Link to={'/'}>Servicios</Link></li>
+                                            <li className="active">
+                                                <a href="https://maxpower.mercadoshops.com.ar/" target="_blank">Tienda</a>
+                                            </li>
                                             <li>
                                                 <label htmlFor="drop-2" className="toggle toogle-2">
                                                     Productos<span className="fa fa-angle-down" aria-hidden="true"></span>
