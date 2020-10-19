@@ -279,14 +279,14 @@ export default function MainContent() {
 									<div className="container">
 										<div className="banner-info">
 											<div className="banner-w3ls-inner">
-												<h4> PRODUCTOS ELÉCTRICOS Y ELECTRÓNICOS </h4>
-												<h3> IMPORTADORES Y DISTRIBUIDORES </h3>
+												<h4> DOMOTICA Y AUTOMATIZACION ELÉCTRICA</h4>
+												<h3> INSTALADORES Y DISTRIBUIDORES </h3>
 												<p>
-													A pesar del COVID-19 seguimos importando y distribuyendo productos
-													eléctricos y electrónicos a nivel nacional para nuestros clientes.
-													Puede realizar su consulta en la parte de contacto o por nuestro
-													chat online.
-													</p>
+													Nos sumamos junto a <a href="http://reactor.com.ar"> Reactor </a>, como instaladores y distribuidores de sus productos.
+													Reactor, es una empresa de automatizacion y control, con productos de excelente calidad. Permiten realizar distintas tareas
+													mediante su aplicacion, como el control de sistemas eléctricos remotos, programar tareas automáticamente con determinadas 
+													condiciones, control de accesos y portones, entre otras.
+												</p>
 												<div className="test-info text-left mt-lg-5 mt-4">
 													<a
 														className="btn mr-2 animate__animated animate__fadeInUp"

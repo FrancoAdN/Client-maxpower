@@ -2773,3 +2773,7 @@ ul.tic-info li span {
 	}
 }
 
+.banner-w3ls-inner a {
+	color: #e2241e;
+	font-weight: 600;
+}
