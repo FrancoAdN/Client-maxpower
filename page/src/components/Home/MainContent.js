@@ -159,6 +159,11 @@ export default function MainContent() {
 															Productos Industriales
 														</Link>
 													</li>
+													<li>
+														<Link to={'/productos-domotica'} className="drop-text">
+															Productos de Domótica
+														</Link>
+													</li>
 												</ul>
 											</li>
 										</ul>
@@ -186,7 +191,7 @@ export default function MainContent() {
 
 				{/* <!-- banner --> */}
 				<section className="banner_w3pvt">
-					<div className="carousel fade-carousel slide carousel-fade" data-ride="carousel" data-interval="5000" id="bs-carousel">
+					<div className="carousel fade-carousel slide carousel-fade" data-ride="carousel" data-interval="7000" id="bs-carousel">
 						{/* <!-- Overlay -->
         				<!-- Indicators --> */}
 
@@ -284,7 +289,7 @@ export default function MainContent() {
 												<p>
 													Nos sumamos junto a <a href="http://reactor.com.ar"> Reactor </a>, como instaladores y distribuidores de sus productos.
 													Reactor, es una empresa de automatizacion y control, con productos de excelente calidad. Permiten realizar distintas tareas
-													mediante su aplicacion, como el control de sistemas eléctricos remotos, programar tareas automáticamente con determinadas 
+													mediante su aplicacion, como el control de sistemas eléctricos remotos, programar tareas automáticamente con determinadas
 													condiciones, control de accesos y portones, entre otras.
 												</p>
 												<div className="test-info text-left mt-lg-5 mt-4">
