@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import './css/style.css';
 import './css/style2.css';
 import './css/font-awesome.css';
+import banner29 from './images/banner29.jpg'; 
 import { refProv } from '../../_useRefHook';
 
 export default function HandCrafted() {
@@ -18,7 +19,7 @@ export default function HandCrafted() {
 								data-aos="fade-left"
 								data-aos-duration="1500"
 							>
-								Conoce más acerca de nosotros...
+								Somos instaladores y distribuidores de <span>Reactor</span>
 							</h3>
 
 							{/* <p data-aos="fade-right" data-aos-duration="1500">
@@ -33,18 +34,12 @@ export default function HandCrafted() {
 							</p> */}
 							<br></br>
 							<p data-aos="fade-right" data-aos-duration="1500">
-								<span style={{ color: '#fff' }}>Nuestra misión:</span> Ser una empresa
-								líder en el mercado brindando soluciones tecnológicas con valor agregado
-								para nuestros clientes. 
-							</p>
-							<p data-aos="fade-right" data-aos-duration="1500">
-								<span style={{ color: '#fff' }}>Nuestra visión:</span> Ser referentes en
-								el mercado nacional e internacional a través de un servicio de
-								asistencia de excelencia y eficiencia que nos permita apoyar el
-								crecimiento y fortalecimiento del sector industrial.
+							Nos sumamos junto a <a href="http://reactor.com.ar"> Reactor </a>, como instaladores y distribuidores de sus productos.
+							Reactor, es una empresa de automatizacion y control, con productos de excelente calidad. Permiten realizar distintas tareas
+							mediante su aplicacion, como el control de sistemas eléctricos remotos, programar tareas automáticamente con determinadas 
+							condiciones, control de accesos y portones, entre otras.
 							</p>
 							<p className="mt-3"></p>
-							<p></p>
 						</div>
 
 						<div
@@ -54,7 +49,7 @@ export default function HandCrafted() {
 						>
 							<div className="img-effect">
 								<img
-									src="https://i.postimg.cc/XYnvQB8T/14-4.jpg"
+									src={banner29}
 									alt=""
 									className="img-fluid image1"
 								/>

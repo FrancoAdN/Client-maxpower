@@ -2384,7 +2384,12 @@ a.login-button-2 {
 /* //top bar */
 
 section.hand-crafted {
-	background: #1e272e;
+	background-image: url(../images/banner27.jpg);
+}
+
+.hand-crafted span,a {
+	color: #ce110a;
+	font-weight: 600;
 }
 
 .hand-crafted h3 {
