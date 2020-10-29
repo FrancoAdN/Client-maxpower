@@ -488,8 +488,11 @@ export default function MainContent() {
 					</div>
 				 */}
 				</section>
+
+
 				{/* <!-- //slider --> */}
 			</div>
 		</div>
 	);
 }
+

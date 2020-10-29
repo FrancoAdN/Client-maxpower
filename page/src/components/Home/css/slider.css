@@ -374,20 +374,20 @@
 
 .fade-carousel .carousel-inner .item .hero {
     opacity: 0;
-    -webkit-transition: 2s all ease-in-out 5s;
-    -moz-transition: 2s all ease-in-out 5s;
-    -ms-transition: 2s all ease-in-out 5s;
-    -o-transition: 2s all ease-in-out 5s;
-    transition: 2s all ease-in-out 5s;
+    -webkit-transition: 2s all ease-in-out 7s;
+    -moz-transition: 2s all ease-in-out 7s;
+    -ms-transition: 2s all ease-in-out 7s;
+    -o-transition: 2s all ease-in-out 7s;
+    transition: 2s all ease-in-out 7s;
 }
 
 .fade-carousel .carousel-inner .item.active .hero {
     opacity: 1;
-    -webkit-transition: 2s all ease-in-out 5s;
-    -moz-transition: 2s all ease-in-out 5s;
-    -ms-transition: 2s all ease-in-out 5s;
-    -o-transition: 2s all ease-in-out 5s;
-    transition: 2s all ease-in-out 5s;
+    -webkit-transition: 2s all ease-in-out 7s;
+    -moz-transition: 2s all ease-in-out 7s;
+    -ms-transition: 2s all ease-in-out 7s;
+    -o-transition: 2s all ease-in-out 7s;
+    transition: 2s all ease-in-out 7s;
 }
 
 /********************************/
