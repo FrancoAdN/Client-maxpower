@@ -87,7 +87,7 @@ export default function About() {
 										<img src={banner} alt="video"/>
 									</div>
 									<div class="video-icon">
-										<a href="https://www.youtube.com/watch?v=r44RKWyfcFw" class="video-popup"><i class="fa fa-play"></i></a>
+										<a href="https://www.youtube.com/watch?v=68A4khKy490&t=3s" class="video-popup"><i class="fa fa-play"></i></a>
 									</div>
 								</div> 
 							</div> 
