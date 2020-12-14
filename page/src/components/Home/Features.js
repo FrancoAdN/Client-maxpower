@@ -4,6 +4,7 @@ import { refProv } from '../../_useRefHook';
 import './css/style.css';
 import './css/style2.css';
 import './css/font-awesome.css';
+import aboutimg from './images/about_image2.jpg';
 
 export default function Features() {
 	const [reparaciones, setReparaciones] = useState(false);
@@ -200,32 +201,32 @@ export default function Features() {
 							<div className="row">
 								<div className="col-sm-4 service-1-w3ls serve-gd2">
 									<div
-										className="serve-grid mt-3"
+										className="serve-grid mt-3 s1"
 										onClick={() => setReparaciones(true)}
 										data-aos="fade-left"
 										data-aos-duration="3000"
 									>
-										<span className="fa fa-wrench s2"></span>
+										<span className="fa fa-wrench"></span>
 										<p className="mt-2">Reparaciones</p>
 									</div>
 									<div
-										className="serve-grid mt-4"
+										className="serve-grid mt-4 s2"
 										onClick={() => setMantenimiento(true)}
 										data-aos="fade-left"
 										data-aos-duration="3000"
 									>
-										<span className="fa fa-briefcase s3"></span>
+										<span className="fa fa-briefcase"></span>
 										<p className="mt-2">Mantenimiento</p>
 									</div>
 								</div>
 								<div className="col-sm-4 service-1-w3ls serve-gd3">
 									<div
-										className="serve-grid mt-4"
+										className="serve-grid mt-4 s3"
 										onClick={() => setDiagnostico(true)}
 										data-aos="fade-right"
 										data-aos-duration="3000"
 									>
-										<span className="fa fa-tachometer s4"></span>
+										<span className="fa fa-tachometer"></span>
 										<p className="mt-2">Diagnóstico</p>
 									</div>
 									<div
@@ -234,27 +235,27 @@ export default function Features() {
 										data-aos="flip-right"
 										data-aos-duration="3000"
 									>
-										<span className="fa fa-address-card-o s5"></span>
+										<span className="fa fa-address-card-o"></span>
 										<p className="text-li mt-2">Capacitaciones</p>
 									</div>
 									<div
-										className="serve-grid mt-4"
+										className="serve-grid mt-4 s1"
 										onClick={() => setArmonicos(true)}
 										data-aos="fade-left"
 										data-aos-duration="3000"
 									>
-										<span className="fa fa-spinner s6"></span>
+										<span className="fa fa-spinner"></span>
 										<p className="mt-2">Armónicos</p>
 									</div>
 								</div>
 								<div className="col-sm-4 service-1-w3ls serve-gd2">
 									<div
-										className="serve-grid mt-4"
+										className="serve-grid mt-4 s2"
 										onClick={() => setTermografia(true)}
 										data-aos="fade-right"
 										data-aos-duration="3000"
 									>
-										<span className="fa fa-podcast s1"></span>
+										<span className="fa fa-podcast"></span>
 										<p className="mt-2">Termografía</p>
 									</div>
 									<div
@@ -263,7 +264,7 @@ export default function Features() {
 										data-aos="fade-right"
 										data-aos-duration="3000"
 									>
-										<span className="fa fa-handshake-o s7"></span>
+										<span className="fa fa-handshake-o"></span>
 										<p className="mt-2">Atención</p>
 									</div>
 								</div>
@@ -272,6 +273,30 @@ export default function Features() {
 					</div>
 				</div>
 			</div>
+
+			<div class="about_area pt-80 pb-130">
+				<div class="about_bg d-none d-lg-block">
+					<div class="about_bg_image bg_cover">
+					</div>
+				</div>
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							<div class="about_image mt-50">
+								<img src={aboutimg} alt="About"/>
+							</div> 
+						</div>
+						<div class="col-lg-6">
+							<div class="about_content mt-50">
+								<h3 class="sub_title"><span>+25</span> Años de experiencia </h3>
+								<h4 class="main_title">Maxpower Industrial Automation </h4>
+								<p>MaxPower es una empresa que brinda soluciones integrales a las industrias. Contamos con más de 25 años de experiencia y debido a la formación profesional en los distintos campos de acción, ofrecemos asesoramiento especializado en las diferentes áreas de las empresas, anticipándonos a sus necesidades actuales y futuras, mejorando el funcionamiento de los procesos continuos a través de la excelencia y la calidad.</p>
+							</div> 
+						</div>
+					</div> 
+				</div> 
+			</div>
+
 		</div>
 	);
 }

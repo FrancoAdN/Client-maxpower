@@ -1,7 +1,6 @@
 import React, { useState, useContext } from 'react'
 import axios from 'axios'
 import './css/style.css'
-import './css/style2.css'
 import './css/font-awesome.css'
 import { refProv } from '../../_useRefHook'
 
@@ -28,46 +27,90 @@ export default function Contact() {
 
     return (
         <div ref={contactRef} data-aos="slide-right" data-aos-duration="3000">
-            <section className="contact py-5 animate__animated animate__fadeIn" id="contact">
-                <div className="container">
-                    <h3 className="title-w3ls text-center text-bl mb-5">Contacto</h3>
-                    <div className="row mx-sm-0 mx-2">
-                        {/* <!-- map --> */}
-                        <div className="col-lg-6 map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13130.002933335736!2d-58.5668047!3d-34.6420551!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x433c634d34888c11!2sMAXPOWER%20INDUSTRIAL%20AUTOMATION!5e0!3m2!1ses-419!2sar!4v1590715803135!5m2!1ses-419!2sar" width="600" height="450" frameBorder="0" style={{ border: '0' }} allowFullScreen="" aria-hidden="false" tabIndex="0"></iframe>
-                        </div>
-                        {/* <!-- //map --> */}
-                        {/* <!-- contact form --> */}
-                        <div className="col-lg-6 main_grid_contact">
-                            <div className="form-w3ls p-md-5 p-4">
-                                <h4 className="mb-4 sec-title-w3 let-spa text-bl"> Completa con tus datos: </h4>
-                                <form onSubmit={(e) => handleOnSubmit(e)}>
-                                    <div className="row">
-                                        <div className="col-sm-6 form-group pr-sm-1">
-                                            <input className="form-control" type="text" value={name} name="Name" placeholder="Nombre" required onChange={e => setName(e.target.value)} />
-                                        </div>
-                                        <div className="col-sm-6 form-group pl-sm-1">
-                                            <input className="form-control" type="email" name="Email" placeholder="Email" value={email} required onChange={e => setEmail(e.target.value)} />
-                                        </div>
-                                    </div>
-                                    <div className="form-group">
-                                        <input className="form-control" type="text" name="Phone Number" placeholder="Empresa" value={emp} required onChange={e => setEmp(e.target.value)} />
-                                    </div>
-                                    <div className="form-group">
-                                        <input className="form-control" type="text" name="Phone Number" placeholder="Teléfono" value={tel} required onChange={e => setTel(e.target.value)} />
-                                    </div>
-                                    <div className="form-group">
-                                        <textarea name="message" placeholder="Descripcion" required value={body} onChange={e => setBody(e.target.value)}></textarea>
-                                    </div>
-                                    <div className="input-group1 text-center">
-                                        <button className="btn" type="submit">Enviar</button>
-                                    </div>
+            <section id="contact" class="contact_area pt-80 pb-130 animate__animated animate__fadeIn">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="contact_form mt-40 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                                <div class="section_title pb-25">
+                                    <h4 class="title"> Formulario </h4>
+                                </div> 
+                                
+                                <form id="contact-form" onSubmit={(e) => handleOnSubmit(e)}>
+                                    <div class="single_form">
+                                        <input name="name" type="text" value={name} placeholder="Nombre y Apellido" required onChange={e => setName(e.target.value)} />
+                                    </div> 
+                                    
+                                    <div class="single_form">
+                                        <input name="email" type="email" placeholder="Email" value={email} required onChange={e => setEmail(e.target.value)} />
+                                    </div> 
+                                    
+                                    <div class="single_form">
+                                        <input name="subject" type="text" placeholder="Empresa" value={emp} required onChange={e => setEmp(e.target.value)} />
+                                    </div> 
+                                    
+                                    <div class="single_form">
+                                        <input name="number" type="text" placeholder="Telefono" value={tel} required onChange={e => setTel(e.target.value)} />
+                                    </div> 
+                                    
+                                    <div class="single_form">
+                                        <textarea name="message" placeholder="Mensaje" required value={body} onChange={e => setBody(e.target.value)}></textarea>
+                                    </div> 
+                                    
+                                    <p class="form-message"></p>
+                                    
+                                    <div class="single_form">
+                                        <button class="main-btn" type="submit"> Enviar </button>
+                                    </div> 
                                 </form>
-                            </div>
+                            </div> 
                         </div>
-                        {/* <!-- //contact form --> */}
-                    </div>
-                </div>
+                        <div class="col-lg-6">
+                            <div class="contact_info mt-40 wow fadeIn" data-wow-duration="1.3s" data-wow-delay="0.5s">
+                                <div class="section_title pb-25">
+                                    <h4 class="title">Contactanos</h4>
+                                </div> 
+                                <p>Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor inidunt ut labore et dolore.Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor inidunt ut labore et dolore.Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor inidunt ut labore et dolore.</p>
+                                
+                                <div class="single_info d-flex align-items-center">
+                                    <div class="info_icon">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="info_content media-body">
+                                        <p> (011)7524-1400 </p>
+                                    </div>
+                                </div> 
+                                
+                                <div class="single_info d-flex align-items-center">
+                                    <div class="info_icon">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <div class="info_content media-body">
+                                        <p>ventas@maxpowerautomation.com</p>
+                                    </div>
+                                </div> 
+                                
+                                <div class="single_info d-flex align-items-center">
+                                    <div class="info_icon">
+                                        <i class="fa fa-globe"></i>
+                                    </div>
+                                    <div class="info_content media-body">
+                                        <p>www.maxpower-ar.com</p>
+                                    </div>
+                                </div> 
+                                
+                                <div class="single_info d-flex align-items-center">
+                                    <div class="info_icon">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <div class="info_content media-body">
+                                        <p> Belgrano 180, Ramos Mejia <br/> Buenos Aires, Argentina</p>
+                                    </div>
+                                </div> 
+                            </div> 
+                        </div>
+                    </div> 
+                </div> 
             </section>
         </div>
     )

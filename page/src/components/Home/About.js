@@ -7,112 +7,106 @@ import './css/style2.css';
 import './css/font-awesome.css';
 import { refProv } from '../../_useRefHook';
 
+import Shape1 from './images/services-shape.svg';
+import Shape2 from './images/services-shape-1.svg';
+import Shape3 from './images/services-shape-2.svg';
+import Shape4 from './images/services-shape-3.svg';
+import banner from './images/banner5.jpg';
+import dots from './images/dots.svg';
+import aboutimg from './images/about_image2.jpg';
+
 export default function About() {
 	const { aboutRef } = useContext(refProv);
 	const [video, setVideo] = useState(false)
 	return (
 		<div ref={aboutRef} data-aos="fade-right" data-aos-duration="1500">
-			<section
-				className="about py-5 my-md-5 animate__animated animate__slideInUp"
-				id="nosotros"
-			>
-				<div className="container">
-					<div className="row about_grids">
-						<div className="col-lg-5 mb-lg-0 mb-5 left-grid">
-							<div className="heading">
-								<h3 className="heading text-uppercase mb-5 pb-3">
-									<span>SOBRE</span> NOSOTROS{' '}
-								</h3>
-								{/* <!-- 
-                            <h4 className="position">HISTORY</h4>
-                            --> */}
-							</div>
-							<p className="mb-4">
-								{' '}
-								MaxPower es una empresa que brinda soluciones integrales a las
-								industrias. Contamos con más de 25 años de experiencia y debido a la
-								formación profesional en los distintos campos de acción, ofrecemos
-								asesoramiento especializado en las diferentes áreas de las empresas,
-								anticipándonos a sus necesidades actuales y futuras, mejorando el
-								funcionamiento de los procesos continuos a través de la excelencia y la
-								calidad{' '}
-							</p>
-							<img src={certificate} className="img-fluid" alt="certificate" />{' '}
-							<strong>Certified Company</strong>
-						</div>
-						<div className="col-lg-7 right-grid">
-							<div className="row right_inner_grids">
-								<div className="col-sm-6 icon1">
-									<span className="fa fa-users"></span>
-									<h4 className="text-uppercase my-3">Profesionales</h4>
-									<p className="mb-4">
-										{' '}
-										Nuestro trabajo, habla de nosotros, le garantizamos un excelente
-										desempeño en nuestros servicios brindados para la satisfacción de
-										nuestros clientes.
-									</p>
-								</div>
-								<div className="col-sm-6 icon2">
-									<span className="fa fa-handshake-o"></span>
-									<h4 className="text-uppercase my-3"> Confiabilidad </h4>
-									<p className="mb-4">
-										{' '}
-										La confianza es un factor importante en el trabajo, es por ello que
-										hacemos que nuestros clientes se sientan cómodos con nuestros
-										servicios.
-									</p>
-								</div>
-								<div className="col-sm-6 icon3 mb-sm-0 mb-3">
-									<span className="fa fa-truck"></span>
-									<h4 className="text-uppercase my-3"> Eficiencia </h4>
-									<p className="">
-										{' '}
-										Nos destacamos por garantizar entrega de productos a corto plazo,
-										agregando a este el servicio de entrega a domicilio sin costo en un
-										radio de 100km alrededor de CABA.
-									</p>
-								</div>
-								<div className="col-sm-6 icon4">
-									<span className="fa fa-check"></span>
-									<h4 className="text-uppercase my-3"> Garantía </h4>
-									<p className="">
-										{' '}
-										Garantizamos el arreglo y correcto funcionamiento de sus productos.
-										Brindamos a nuestros clientes productos y servicios con la mejor
-										calidad.
-									</p>
-								</div>
+			<section id="nosotros" class="services-area pt-120 animate__animated animate__slideInUp" >
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-10">
+							<div class="section-title text-center pb-40">
+								<div class="line m-auto"></div>
+								<h3 class="title"><span> Somos </span> Maxpower <span> ,empresa que brinda soluciones integrales a las industrias con mas de 25 años de experiencia</span></h3>
 							</div>
 						</div>
 					</div>
-				</div>
+					<div class="row justify-content-center">
+						<div class="col-lg-4 col-md-7 col-sm-8">
+							<div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+								<div class="services-icon">
+									<img class="shape" src={Shape1} alt="shape"/>
+									<img class="shape-1" src={Shape2}alt="shape"/>
+									<i class="fa fa-briefcase"></i>
+								</div>
+								<div class="services-content mt-30">
+									<h4 class="services-title"><a href="#"> Profesionales </a></h4>
+									<p class="text">Nuestro trabajo, habla de nosotros, le garantizamos un excelente desempeño en nuestros servicios brindados para la satisfacción de nuestros clientes.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-7 col-sm-8">
+							<div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+								<div class="services-icon">
+									<img class="shape" src={Shape1} alt="shape"/>
+									<img class="shape-1" src={Shape3} alt="shape"/>
+									<i class="fa fa-handshake-o"></i>
+								</div>
+								<div class="services-content mt-30">
+									<h4 class="services-title"><a href="#"> Confiables </a></h4>
+									<p class="text">La confianza es un factor importante en el trabajo, es por ello que hacemos que nuestros clientes se sientan cómodos con nuestros servicios.</p>
+								</div>
+							</div>
+                		</div>
+						<div class="col-lg-4 col-md-7 col-sm-8">
+							<div class="single-services text-center mt-30 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+								<div class="services-icon">
+									<img class="shape" src={Shape1} alt="shape"/>
+									<img class="shape-1" src={Shape4} alt="shape"/>
+									<i class="fa fa-thumbs-up"></i>
+								</div>
+								<div class="services-content mt-30">
+									<h4 class="services-title"><a href="#">Eficientes</a></h4>
+									<p class="text">Nos destacamos por garantizar entrega de productos a corto plazo, con una excelente calidad de empaquetado y asistencia durante su proceso.</p>
+								</div>
+							</div> 
+						</div>
+					</div> 
+				</div> 
 			</section>
+
 			{/* <!-- Video Popup Section Start --> */} {/* <!-- CSS: Style 2--> */}
-			<section className="video" id="">
-				<div className="video-popup"> 
-					<div className="container">
-						<div className="row">
-							<div className="col-md-8 col-md-offset-2 text-center video-heading">
-								<h2> Ya podes ver nuestro video institucional</h2>
-								<p>
-									Lanzamos en youtube nuestro nuevo video institucional, mostrando a
-									nuestros clientes nuestra empresa, las areas y el trabajo que hacemos
-									dia a dia para brindar la mejor atencion.
-								</p>
-							</div>
+
+			<section id="nosotros" class="video-counter pt-70">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="video-content mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+								<img class="dots" src={dots} alt="dots"/>
+								<div class="video-wrapper">
+									<div class="video-image">
+										<img src={banner} alt="video"/>
+									</div>
+									<div class="video-icon">
+										<a href="https://www.youtube.com/watch?v=r44RKWyfcFw" class="video-popup"><i class="fa fa-play"></i></a>
+									</div>
+								</div> 
+							</div> 
 						</div>
-						<div className="row">
-							<div className="col-md-12">
-								<span className="play">
-									<a className="pulse popup-youtube" onClick={() => setVideo(true)}>
-										<img src={play} className="play-icon"></img>
-									</a>
-								</span>
-							</div>
+						<div class="col-lg-6">
+							<div class="counter-wrapper mt-50 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.8s">
+								<div class="counter-content">
+									<div class="section-title">
+										<div class="line"></div>
+										<h3 class="title"> <span> Nuestro video institucional </span></h3>
+									</div> 
+									<p class="text">Lanzamos en youtube nuestro nuevo video institucional, mostrando a nuestros clientes nuestra empresa, las areas y el trabajo que hacemos dia a dia para brindar la mejor atencion.</p>
+								</div> 
+							</div> 
 						</div>
-					</div>
-				</div>
+					</div> 
+				</div> 
 			</section>
+
 			<VideoPopup video={video} setVideo={setVideo} />
 			{/* <!-- Video Popup Section End --> */}
 		</div>
