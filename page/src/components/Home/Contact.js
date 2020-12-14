@@ -70,7 +70,7 @@ export default function Contact() {
                                 <div class="section_title pb-25">
                                     <h4 class="title">Contactanos</h4>
                                 </div> 
-                                <p>Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor inidunt ut labore et dolore.Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor inidunt ut labore et dolore.Lorem ipsum dolor sit consetetur sadipscing elitr, sed diamnonumy eirmod tempor inidunt ut labore et dolore.</p>
+                                <p> A continuacion, te dejamos nuestras distintas formas de contacto. No dudes en realizar tu consulta!</p>
                                 
                                 <div class="single_info d-flex align-items-center">
                                     <div class="info_icon">
