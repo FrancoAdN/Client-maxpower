@@ -80,13 +80,10 @@ export default function Footer() {
 										<i className="fa fa-envelope-o"></i> agutierrez@maxpowerautomation.com{' '}
 									</li>
 									<li>
-										<i className="fa fa-phone-square"></i> (011)7524-1400{' '}
+										<i className="fa fa-phone-square"></i> (+54) 15 6309-3562
 									</li>
 									<li>
-										<i className="fa fa-phone-square"></i> (011) 7520-5667{' '}
-									</li>
-									<li>
-										<i className="fa fa-phone-square"></i> (011) 7502-9920{' '}
+										<i className="fa fa-phone-square"></i> (+54) 15 5696-8809
 									</li>
 									<li>
 										<i className="fa fa-home"></i> Belgrano 180, Oficina-5, Ramos Mejía.
