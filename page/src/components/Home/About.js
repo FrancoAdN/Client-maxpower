@@ -14,6 +14,7 @@ import Shape4 from './images/services-shape-3.svg';
 import banner from './images/banner5.jpg';
 import dots from './images/dots.svg';
 import aboutimg from './images/about_image2.jpg';
+import banner30 from './images/test.jpg';
 
 export default function About() {
 	const { aboutRef } = useContext(refProv);
@@ -105,6 +106,44 @@ export default function About() {
 						</div>
 					</div> 
 				</div> 
+			</section>
+
+			<section className="hand-crafted2 py-5">
+				<div className="container py-lg-5">
+					<div className="row accord-info">
+						<div className="col-lg-6 pl-md-5">
+							<h3
+								className="mb-md-5 tittle"
+								data-aos="fade-left"
+								data-aos-duration="1500"
+							>
+								Contamos con amplio stock en variadores <span className="green"> Schneider Electric </span>
+							</h3>
+							<br></br>
+							<p data-aos="fade-right" data-aos-duration="1500">
+							Sumamos a nuestro stock en Variadores de velocidad, distintos modelos de excelente calidad. Podes consultar por los mismos, a traves, de nuestro
+							email (ventas@maxpowerautomation.com) o llamando a nuestras lineas telefonicas. Contamos con los mejores precios y garantia de fabrica de 1 año en variadores de la linea <span className="green">Schneider Electric. </span>
+							
+
+							</p>
+							<p className="mt-3"></p>
+						</div>
+
+						<div
+							className="col-lg-6 banner-image"
+							data-aos="fade-left"
+							data-aos-duration="3000"
+						>
+							<div className="img-effect">
+								<img
+									src={banner30}
+									alt=""
+									className="img-fluid image1"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
 			</section>
 
 			<VideoPopup video={video} setVideo={setVideo} />

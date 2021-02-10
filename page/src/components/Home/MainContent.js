@@ -56,8 +56,9 @@ export default function MainContent() {
 												<span className="fa fa-map-marker mr-2"></span> Argentina
 											</p>
 											<p>
-												<i className="fa fa-phone mr-2"></i> (+54) 15 5696-8809
+												<i className="fa fa-phone mr-2"></i> (+54) 11 5696-8809
 											</p>
+											
 										</div>
 										{/* <!-- social icons --> */}
 										<ul className="col-md-6 top-right-info text-md-right text-center">

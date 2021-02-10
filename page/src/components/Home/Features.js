@@ -4,7 +4,7 @@ import { refProv } from '../../_useRefHook';
 import './css/style.css';
 import './css/style2.css';
 import './css/font-awesome.css';
-import aboutimg from './images/about_image2.jpg';
+import aboutimg from './images/about_image.jpg';
 
 export default function Features() {
 	const [reparaciones, setReparaciones] = useState(false);

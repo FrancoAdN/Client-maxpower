@@ -25,7 +25,6 @@ export default function Home() {
             <Prods />
             <Features />
             <HandCrafted />
-            <Contact />
             <Footer />
         </div>
     )

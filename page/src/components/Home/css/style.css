@@ -3097,6 +3097,30 @@ font-size: 40px;
 margin-right: 20px;
 }
 
+@media (max-width:414px) {
+	.tracking-image {
+		margin-left: -60px;
+	}
+}
+
+@media (max-width:375px) {
+	.tracking-image {
+		margin-left: -80px;
+	}
+}
+
+@media (max-width:360px) {
+	.tracking-image {
+		margin-left: -90px;
+	}
+}
+
+@media (max-width:320px) {
+	.tracking-image {
+		margin-left: -110px;
+	}
+}
+
 .icon-style {
 display: flex;
 justify-content: center;
@@ -3309,3 +3333,7 @@ margin-top: 30px; }
 	  margin-top: 25px; }
 	.about_content .main-btn {
 	  margin-top: 45px; }
+
+	  .green {
+		color: green !important;
+	}

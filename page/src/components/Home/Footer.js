@@ -80,18 +80,13 @@ export default function Footer() {
 										<i className="fa fa-envelope-o"></i> agutierrez@maxpowerautomation.com{' '}
 									</li>
 									<li>
-										<i className="fa fa-phone-square"></i> (+54) 15 6309-3562
+										<i className="fa fa-phone-square"></i> (+54) 11 6309-3562
 									</li>
 									<li>
-										<i className="fa fa-phone-square"></i> (+54) 15 5696-8809
+										<i className="fa fa-phone-square"></i> (+54) 11 5696-8809
 									</li>
 									<li>
-										<i className="fa fa-home"></i> Belgrano 180, Oficina-5, Ramos Mejía.
-									</li>
-									<li>
-										<a href="https://g.page/maxpower-industrial-automation?share">
-											<i className="fa fa-map-marker"></i> Ver en el mapa{' '}
-										</a>
+										<i className="fa fa-home"></i> Dr. Gabriel Ardoino 364, Piso 17B, Torre A, Ramos Mejía. 
 									</li>
 								</ul>
 							</div>
