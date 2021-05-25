@@ -10,8 +10,6 @@ import Footer from './Footer'
 import 'aos/dist/aos.css'
 import Chat from '../Chat/Chat'
 
-
-
 export default function Home() {
     useEffect(() => {
         AOS.init()

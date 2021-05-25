@@ -77,24 +77,7 @@ export default function Footer() {
 										<i className="fa fa-envelope-o"></i> ventas@maxpowerautomation.com{' '}
 									</li>
 									<li>
-										<i className="fa fa-envelope-o"></i> agutierrez@maxpowerautomation.com{' '}
-									</li>
-									<li>
-										<i className="fa fa-phone-square"></i> (011)7524-1400{' '}
-									</li>
-									<li>
-										<i className="fa fa-phone-square"></i> (011) 7520-5667{' '}
-									</li>
-									<li>
-										<i className="fa fa-phone-square"></i> (011) 7502-9920{' '}
-									</li>
-									<li>
-										<i className="fa fa-home"></i> Belgrano 180, Oficina-5, Ramos Mejía.
-									</li>
-									<li>
-										<a href="https://g.page/maxpower-industrial-automation?share">
-											<i className="fa fa-map-marker"></i> Ver en el mapa{' '}
-										</a>
+										<i className="fa fa-phone-square"></i> (011)5696-8809{' '}
 									</li>
 								</ul>
 							</div>
