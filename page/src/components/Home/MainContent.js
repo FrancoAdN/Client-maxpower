@@ -56,8 +56,9 @@ export default function MainContent() {
 												<span className="fa fa-map-marker mr-2"></span> Argentina
 											</p>
 											<p>
-												<i className="fa fa-phone mr-2"></i> +011 5696-8809
+												<i className="fa fa-phone mr-2"></i> (+54) 11 5696-8809
 											</p>
+											
 										</div>
 										{/* <!-- social icons --> */}
 										<ul className="col-md-6 top-right-info text-md-right text-center">
@@ -170,8 +171,7 @@ export default function MainContent() {
 									</nav>
 								</div>
 								{/* <!-- //nav --> */}
-								<div className="justify-content-center">
-									{/* <!-- search --> */}
+								{/* <div className="justify-content-center">
 									<div className="apply-bt-pvt ml-lg-3">
 										<a
 											className="btn read"
@@ -181,8 +181,7 @@ export default function MainContent() {
 											Contacto
 										</a>
 									</div>
-									{/* <!-- //search --> */}
-								</div>
+								</div> */}
 							</div>
 						</div>
 					</div>
@@ -279,7 +278,7 @@ export default function MainContent() {
 									</div>
 								</div>
 							</div>
-							<div className="item slides carousel-item">
+							{/* <div className="item slides carousel-item">
 								<div className="slide-3">
 									<div className="container">
 										<div className="banner-info">
@@ -310,7 +309,7 @@ export default function MainContent() {
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> */}
 							<div className="hero">
 								<hgroup>
 								</hgroup>
@@ -488,8 +487,11 @@ export default function MainContent() {
 					</div>
 				 */}
 				</section>
+
+
 				{/* <!-- //slider --> */}
 			</div>
 		</div>
 	);
 }
+
